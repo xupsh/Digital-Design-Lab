@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="vga_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1474342957">
+  <File Type="RDS-DCP" Name="vga_0.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/vga_0_synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="vga_0_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/vga_0_synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="vga_0_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="vga_0.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/vga_0_synth_1/vga_0_synth_1.psg"/>
+  <File Type="RDS-RDS" Name="vga_0.vds"/>
+  <File Type="RDS-UTIL" Name="vga_0_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vga_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="vga_0_timing_summary_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="vga_0.hwdef"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vga_0">
+    <File Path="$PSRCDIR/sources_1/ip/vga_0/vga_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="vga_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vga_0">
+    <File Path="$PSRCDIR/sources_1/ip/vga_0/vga_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="vga_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

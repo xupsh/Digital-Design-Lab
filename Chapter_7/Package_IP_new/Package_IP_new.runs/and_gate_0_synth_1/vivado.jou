@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Sep 27 14:37:14 2016
+# Process ID: 11464
+# Current directory: C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_7/Package_IP_new/Package_IP_new.runs/and_gate_0_synth_1
+# Command line: vivado.exe -log and_gate_0.vds -mode batch -messageDb vivado.pb -notrace -source and_gate_0.tcl
+# Log file: C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_7/Package_IP_new/Package_IP_new.runs/and_gate_0_synth_1/and_gate_0.vds
+# Journal file: C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_7/Package_IP_new/Package_IP_new.runs/and_gate_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source and_gate_0.tcl -notrace

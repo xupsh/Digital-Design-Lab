@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/Digital_camera/digital_camera.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="OV7725_SIOD_OBUF" type="logic">
+      <obj_property name="ElementShortName">OV7725_SIOD_OBUF</obj_property>
+      <obj_property name="ObjectShortName">OV7725_SIOD_OBUF</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="OV7725_SIOC_OBUF" type="logic">
+      <obj_property name="ElementShortName">OV7725_SIOC_OBUF</obj_property>
+      <obj_property name="ObjectShortName">OV7725_SIOC_OBUF</obj_property>
+   </wvobject>
+</wave_config>

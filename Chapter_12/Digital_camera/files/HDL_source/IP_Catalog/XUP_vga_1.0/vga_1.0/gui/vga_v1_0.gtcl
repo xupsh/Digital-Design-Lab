@@ -1,0 +1,3 @@
+# This file is automatically written.  Do not modify.
+proc gen_USERPARAMETER_H_POS_SIZE_ENABLEMENT {HPOS } {expr $HPOS}
+proc gen_USERPARAMETER_V_POS_SIZE_ENABLEMENT {VPOS } {expr $VPOS}

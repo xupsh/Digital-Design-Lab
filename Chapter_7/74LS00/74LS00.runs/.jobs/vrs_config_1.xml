@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="four_2_input_nand_gate_0_synth_1" LaunchDir="E:/Xilinx_workplace/74LSXX_Lib/74LS00/74LS00.runs/four_2_input_nand_gate_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

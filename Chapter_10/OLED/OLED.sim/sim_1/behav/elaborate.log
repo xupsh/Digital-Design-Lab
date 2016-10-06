@@ -1,0 +1,21 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 1b7fc4a295e342258be6b0247d833ff7 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_top.v:70]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Basys3/OLED/OLED.srcs/sources_1/new/spi_master.v" Line 1. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Basys3/OLED/OLED.srcs/sources_1/new/spi_master.v" Line 1. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.oled_init
+Compiling module xil_defaultlib.oled_write_data
+Compiling module xil_defaultlib.oled_clear
+Compiling module xil_defaultlib.oled_top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_behav

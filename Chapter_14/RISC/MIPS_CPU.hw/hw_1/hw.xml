@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hwsession version="1" minor="1">
+  <device name="xc7a35t_0" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="MIPS_CPU.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="MIPS_CPU.runs/impl_1/MIPS_CPU_wrapper.bit"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

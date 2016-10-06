@@ -1,0 +1,90 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Thu Sep 29 14:10:33 2016
+| Host         : XSHZHEHENGT30 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 7
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT oled_clear/spi_data_reg[7]_i_2 is driving clock pin of 7 cells. This could lead to large hold time violations. First few involved cells are:
+    oled_clear/spi_data_reg[0] {LDCE}
+    oled_clear/spi_data_reg[1] {LDCE}
+    oled_clear/spi_data_reg[6] {LDCE}
+    oled_clear/spi_data_reg[2] {LDCE}
+    oled_clear/spi_data_reg[4] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT oled_clear/spi_send_reg_i_2__0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    oled_clear/spi_send_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT oled_write_data/spi_data_reg[7]_i_1 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    oled_write_data/spi_data_reg[4] {LDCE}
+    oled_write_data/spi_data_reg[0] {LDCE}
+    oled_write_data/spi_data_reg[5] {LDCE}
+    oled_write_data/spi_data_reg[2] {LDCE}
+    oled_write_data/spi_data_reg[1] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT oled_write_data/spi_send_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    oled_write_data/spi_send_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT spi_send_reg_i_2__1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    spi_send_reg {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT write_start_reg_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    write_start_reg {LDCE}
+
+Related violations: <none>
+
+

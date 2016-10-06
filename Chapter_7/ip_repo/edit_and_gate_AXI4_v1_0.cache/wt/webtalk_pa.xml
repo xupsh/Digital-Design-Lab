@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Sep 27 14:31:42 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="db3cf0278d2a4368bef9611ab1500bf1" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="2" type="JavaHandler"/>
+<property name="IPPackagerWizardHandler" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="5" type="GuiResourceData"/>
+<property name="NEXT, Next " value="13" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, and_gate" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, and_gate_tb" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, Create and Package IP..." value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RESET, Reset Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN, Run Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FamilySupportTable_ADD_FAMILY_EXPLICITLY, Add Family Explicitly..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, Package_IP_new.srcs/sim_1/new/and_gate_tb.v ;  ; verilogSource ; false ; xilinx_testbench ; , 7, Package_IP_new.srcs/sim_1/new/and_gate_tb.v, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, Simulation ;  ;  ; false ;  ; and_gate, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, Synthesis ;  ;  ; false ;  ; and_gate, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileGroupFacetTable_FILE_GROUP_FACET_TABLE, Test Bench ;  ;  ; false ;  ; and_gate_tb, 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_0_CRITICAL_WARNING, 1 critical warning" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, and_gate (and_gate.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, and_gate_AXI4_v1_0 (and_gate_AXI4_v1_0.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, and_gate_tb (and_gate_tb.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_WINDOW, Window" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.ManualSelectionPanel_FPGA_PARTS, [All Families and Parts, aartix7 (Artix-7" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Analysis Results, sim_1, [HDL 9-806] Syntax error near #. [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_7/Package_IP_new/Package_IP_new.srcs/sim_1/new/and_gate_tb.v:30]. ], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 BFM simulation and debug demonstration design." value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_EDIT_IP, Edit IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_INTERFACE_MODE, Master, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_INTERFACE_MODE, Slave, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_7/Package_IP_new/" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_NAME_MYIP, and_gate_AXI4" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NewIpWizard_VERIFY_PERIPHERAL_IP_USING_AXI4_BFM, Verify peripheral IP using AXI4 BFM Simulation interface" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackageIPComponentDialog_ARCHIVE_NAME, and_gate_1.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Addressing and Memory, 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Compatibility, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Customization GUI, 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Customization Parameters, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, File Groups, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Ports and Interfaces, 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, Review and Package, 7" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PARTS, xc7a35tcpg236-1 ; 236 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0, 6, xc7a35tcpg236-1, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, C:\Users\zhehengt\Desktop\Digital_Design_Lab\Chapter_7" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Package_IP_new" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReviewContentPanel_EDIT, edit" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, Package IP" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="1" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_ADD_ELEMENT, Add" value="2" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="7" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 206, 202, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 35, 90" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, a[1:0]], 0" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, b[1:0]], 1" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, c[1:0]], 6" value="1" type="GuiResourceData"/>
+<property name="and_gate.v, 103, 234" value="1" type="GuiResourceData"/>
+<property name="and_gate.v, 114, 356" value="1" type="GuiResourceData"/>
+<property name="and_gate.v, 147, 361" value="1" type="GuiResourceData"/>
+<property name="and_gate.v, 151, 428" value="1" type="GuiResourceData"/>
+<property name="and_gate.v, 243, 229" value="1" type="GuiResourceData"/>
+<property name="and_gate_AXI4_v1_0.v, 95, 187" value="1" type="GuiResourceData"/>
+<property name="and_gate_tb.v, 130, 377" value="1" type="GuiResourceData"/>
+<property name="and_gate_tb.v, 155, 337" value="1" type="GuiResourceData"/>
+<property name="and_gate_tb.v, 60, 213" value="1" type="GuiResourceData"/>
+<property name="and_gate_tb.v, 66, 257" value="1" type="GuiResourceData"/>
+<property name="and_gate_tb.v, 92, 233" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="260" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="148" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

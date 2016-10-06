@@ -1,0 +1,1629 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar 27 20:36:08 2016" VIVADOVERSION="2014.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_1_imp" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="Config_Done" SIGIS="undef"/>
+    <PORT DIR="O" NAME="OV7725_SIOC" SIGIS="undef" SIGNAME="IICctrl_0_I2C_SCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IICctrl_0" PORT="I2C_SCLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Move_EN" SIGIS="undef" SIGNAME="External_Ports_Move_EN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="move_en_0" PORT="Move_EN"/>
+        <CONNECTION INSTANCE="move_en_1" PORT="Move_EN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="OV7725_SIOD" SIGIS="undef" SIGNAME="External_Ports_OV7725_SIOD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IICctrl_0" PORT="I2C_SDAT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="OV7725_D" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_OV7725_D">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="OV7725_HREF" SIGIS="undef" SIGNAME="External_Ports_OV7725_HREF">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="href"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn_ColorExtract" SIGIS="undef" SIGNAME="External_Ports_btn_ColorExtract">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="colorDetect_0" PORT="btn_ColorExtract"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk100" SIGIS="clk" SIGNAME="External_Ports_clk100">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="OV7725_XCLK" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="pwm_out_x" SIGIS="undef" SIGNAME="move_en_0_pwm_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="move_en_0" PORT="pwm_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="pwm_out_y" SIGIS="undef" SIGNAME="move_en_1_pwm_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="move_en_1" PORT="pwm_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="OV7725_PCLK" SIGIS="undef" SIGNAME="External_Ports_OV7725_PCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="pclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="vga_blue" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_vga_blue">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ram_read_0" PORT="vga_blue"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="vga_green" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_vga_green">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ram_read_0" PORT="vga_green"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="vga_red" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_vga_red">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ram_read_0" PORT="vga_red"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="debounce_0" PORT="i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw_ColorClear" SIGIS="undef" SIGNAME="External_Ports_sw_ColorClear">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="colorDetect_0" PORT="sw_ColorClear"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxn14" SIGIS="undef" SIGNAME="External_Ports_vauxn14">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxn14"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxn15" SIGIS="undef" SIGNAME="External_Ports_vauxn15">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxn15"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxn6" SIGIS="undef" SIGNAME="External_Ports_vauxn6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxn6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxn7" SIGIS="undef" SIGNAME="External_Ports_vauxn7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxn7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxp14" SIGIS="undef" SIGNAME="External_Ports_vauxp14">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxp14"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxp15" SIGIS="undef" SIGNAME="External_Ports_vauxp15">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxp15"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxp6" SIGIS="undef" SIGNAME="External_Ports_vauxp6">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxp6"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="vauxp7" SIGIS="undef" SIGNAME="External_Ports_vauxp7">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xadc_0" PORT="vauxp7"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="vga_hsync" SIGIS="undef" SIGNAME="vga_0_vga_hsync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_0" PORT="vga_hsync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="vga_vsync" SIGIS="undef" SIGNAME="vga_0_vga_vsync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_0" PORT="vga_vsync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="OV7725_VSYNC" SIGIS="undef" SIGNAME="External_Ports_OV7725_VSYNC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="vsync"/>
+        <CONNECTION INSTANCE="servo_ctrl_0" PORT="vsync_in"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <MODULES>
+    <MODULE FULLNAME="/IICctrl_0" HWVERSION="1.0" INSTANCE="IICctrl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="IICctrl" VLNV="xilinx.com:XUP:IICctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="LUT_SIZE" VALUE="170"/>
+        <PARAMETER NAME="CLK_Freq" VALUE="25000000"/>
+        <PARAMETER NAME="I2C_Freq" VALUE="10000"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_IICctrl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="iCLK" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="debounce_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="I2C_SCLK" SIGIS="undef" SIGNAME="IICctrl_0_I2C_SCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_SIOC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="I2C_SDAT" SIGIS="undef" SIGNAME="External_Ports_OV7725_SIOD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_SIOD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="LUT_INDEX" RIGHT="0" SIGIS="undef" SIGNAME="IICctrl_0_LUT_INDEX">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ov7725_regData_0" PORT="LUT_INDEX"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="LUT_DATA" RIGHT="0" SIGIS="undef" SIGNAME="ov7725_regData_0_LUT_DATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ov7725_regData_0" PORT="LUT_DATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="Slave_Addr" RIGHT="0" SIGIS="undef" SIGNAME="ov7725_regData_0_Slave_Addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ov7725_regData_0" PORT="Slave_Addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PWM_gen_0" HWVERSION="1.0" INSTANCE="PWM_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM_gen" VLNV="xilinx.com:XUP:PWM_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="f" VALUE="50"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_PWM_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_pwm" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr_pwm" SIGIS="undef" SIGNAME="debounce_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="14" NAME="duty" RIGHT="0" SIGIS="undef" SIGNAME="servo_ctrl_0_duty_x">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="servo_ctrl_0" PORT="duty_x"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM" SIGIS="undef" SIGNAME="PWM_gen_0_PWM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="move_en_0" PORT="pwm_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PWM_gen_1" HWVERSION="1.0" INSTANCE="PWM_gen_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM_gen" VLNV="xilinx.com:XUP:PWM_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="f" VALUE="50"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_PWM_gen_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_pwm" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr_pwm" SIGIS="undef" SIGNAME="debounce_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="14" NAME="duty" RIGHT="0" SIGIS="undef" SIGNAME="servo_ctrl_0_duty_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="servo_ctrl_0" PORT="duty_y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM" SIGIS="undef" SIGNAME="PWM_gen_1_PWM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="move_en_1" PORT="pwm_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/blk_mem_gen_0" HWVERSION="8.2" INSTANCE="blk_mem_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_2;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="NO_CHANGE"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="16"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="16"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="76800"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="76800"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="17"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="16"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="16"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="76800"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="76800"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="17"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="34"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="4"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     31.015484 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_blk_mem_gen_0_0"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="Simple_Dual_Port_RAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="false"/>
+        <PARAMETER NAME="Byte_Size" VALUE="9"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="16"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="76800"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="16"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="NO_CHANGE"/>
+        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="16"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="16"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="false"/>
+        <PARAMETER NAME="Coe_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_wclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="wclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="16" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cam_ov7670_ov7725_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clkb" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="16" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ram_read_0" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb565_rgb888_0" PORT="rgb565"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="addra"/>
+            <PORTMAP PHYSICAL="clka"/>
+            <PORTMAP PHYSICAL="dina"/>
+            <PORTMAP PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTB" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="addrb"/>
+            <PORTMAP PHYSICAL="clkb"/>
+            <PORTMAP PHYSICAL="doutb"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/cam_ov7670_ov7725_0" HWVERSION="1.0" INSTANCE="cam_ov7670_ov7725_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cam_ov7670_ov7725" VLNV="xilinx.com:XUP:cam_ov7670_ov7725:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_cam_ov7670_ov7725_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="pclk" SIGIS="undef" SIGNAME="External_Ports_OV7725_PCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_PCLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vsync" SIGIS="undef" SIGNAME="External_Ports_OV7725_VSYNC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_VSYNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="href" SIGIS="undef" SIGNAME="External_Ports_OV7725_HREF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_HREF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="d" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_OV7725_D">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_D"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="H_cnt" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="10" NAME="V_cnt" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="16" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="we" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wclk" SIGIS="undef" SIGNAME="cam_ov7670_ov7725_0_wclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_wiz_0" HWVERSION="5.1" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:5.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v5_1;d=pg065-clk-wiz.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_CLKOUT2_USED" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT3_USED" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT4_USED" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT5_USED" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT6_USED" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT7_USED" VALUE="0"/>
+        <PARAMETER NAME="C_USE_CLKOUT1_BAR" VALUE="0"/>
+        <PARAMETER NAME="C_USE_CLKOUT2_BAR" VALUE="0"/>
+        <PARAMETER NAME="C_USE_CLKOUT3_BAR" VALUE="0"/>
+        <PARAMETER NAME="C_USE_CLKOUT4_BAR" VALUE="0"/>
+        <PARAMETER NAME="c_component_name" VALUE="design_1_clk_wiz_0_0"/>
+        <PARAMETER NAME="C_PLATFORM" VALUE="UNKNOWN"/>
+        <PARAMETER NAME="C_USE_FREQ_SYNTH" VALUE="1"/>
+        <PARAMETER NAME="C_USE_PHASE_ALIGNMENT" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_IN_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="C_SECONDARY_IN_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="C_JITTER_SEL" VALUE="No_Jitter"/>
+        <PARAMETER NAME="C_USE_MIN_POWER" VALUE="0"/>
+        <PARAMETER NAME="C_USE_MIN_O_JITTER" VALUE="0"/>
+        <PARAMETER NAME="C_USE_MAX_I_JITTER" VALUE="0"/>
+        <PARAMETER NAME="C_USE_DYN_PHASE_SHIFT" VALUE="0"/>
+        <PARAMETER NAME="C_USE_INCLK_SWITCHOVER" VALUE="0"/>
+        <PARAMETER NAME="C_USE_DYN_RECONFIG" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SPREAD_SPECTRUM" VALUE="0"/>
+        <PARAMETER NAME="C_USE_FAST_SIMULATION" VALUE="0"/>
+        <PARAMETER NAME="C_PRIMTYPE_SEL" VALUE="AUTO"/>
+        <PARAMETER NAME="C_USE_CLK_VALID" VALUE="0"/>
+        <PARAMETER NAME="C_PRIM_IN_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_IN_FREQ_UNITS" VALUE="Units_MHz"/>
+        <PARAMETER NAME="C_SECONDARY_IN_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_FEEDBACK_SOURCE" VALUE="FDBK_AUTO"/>
+        <PARAMETER NAME="C_PRIM_SOURCE" VALUE="Single_ended_clock_capable_pin"/>
+        <PARAMETER NAME="C_SECONDARY_SOURCE" VALUE="Single_ended_clock_capable_pin"/>
+        <PARAMETER NAME="C_CLKFB_IN_SIGNALING" VALUE="SINGLE"/>
+        <PARAMETER NAME="C_USE_RESET" VALUE="0"/>
+        <PARAMETER NAME="C_RESET_LOW" VALUE="0"/>
+        <PARAMETER NAME="C_USE_LOCKED" VALUE="0"/>
+        <PARAMETER NAME="C_USE_INCLK_STOPPED" VALUE="0"/>
+        <PARAMETER NAME="C_USE_CLKFB_STOPPED" VALUE="0"/>
+        <PARAMETER NAME="C_USE_POWER_DOWN" VALUE="0"/>
+        <PARAMETER NAME="C_USE_STATUS" VALUE="0"/>
+        <PARAMETER NAME="C_USE_FREEZE" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_OUT_CLKS" VALUE="2"/>
+        <PARAMETER NAME="C_CLKOUT1_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_CLKOUT2_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_CLKOUT3_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_CLKOUT4_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_CLKOUT5_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_CLKOUT6_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_CLKOUT7_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="C_INCLK_SUM_ROW0" VALUE="Input Clock   Freq (MHz)    Input Jitter (UI)"/>
+        <PARAMETER NAME="C_INCLK_SUM_ROW1" VALUE="__primary_________100.000____________0.010"/>
+        <PARAMETER NAME="C_INCLK_SUM_ROW2" VALUE="no_secondary_input_clock"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW0A" VALUE="Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW0B" VALUE="Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="CLK_OUT1___100.000______0.000______50.0______130.958_____98.575"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="CLK_OUT2____25.000______0.000______50.0______175.402_____98.575"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="no_CLK_OUT3_output"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="no_CLK_OUT4_output"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="no_CLK_OUT5_output"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW6" VALUE="no_CLK_OUT6_output"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW7" VALUE="no_CLK_OUT7_output"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT2_REQUESTED_OUT_FREQ" VALUE="25.000"/>
+        <PARAMETER NAME="C_CLKOUT3_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT6_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT7_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT2_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT3_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT4_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT5_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT6_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT7_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT2_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT3_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT4_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT6_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT7_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT2_OUT_FREQ" VALUE="25.000"/>
+        <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT5_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT6_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT7_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT1_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT2_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT3_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT4_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT5_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT6_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT7_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLKOUT1_DUTY_CYCLE" VALUE="50.0"/>
+        <PARAMETER NAME="C_CLKOUT2_DUTY_CYCLE" VALUE="50.0"/>
+        <PARAMETER NAME="C_CLKOUT3_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT4_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT5_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT6_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT7_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_USE_SAFE_CLOCK_STARTUP" VALUE="0"/>
+        <PARAMETER NAME="C_USE_CLOCK_SEQUENCING" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT1_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT2_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT3_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT4_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT5_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT6_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_CLKOUT7_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_NOTES" VALUE="None"/>
+        <PARAMETER NAME="C_MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="10.000"/>
+        <PARAMETER NAME="C_MMCM_CLKIN1_PERIOD" VALUE="10.0"/>
+        <PARAMETER NAME="C_MMCM_CLKIN2_PERIOD" VALUE="10.0"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT4_CASCADE" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLOCK_HOLD" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_COMPENSATION" VALUE="ZHOLD"/>
+        <PARAMETER NAME="C_MMCM_DIVCLK_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_REF_JITTER1" VALUE="0.010"/>
+        <PARAMETER NAME="C_MMCM_REF_JITTER2" VALUE="0.010"/>
+        <PARAMETER NAME="C_MMCM_STARTUP_WAIT" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="10.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="40"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT4_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT5_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT6_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT1_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT2_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT3_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT4_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT5_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT6_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT1_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT2_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT3_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT4_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT5_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT6_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT1_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT2_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT3_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT4_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT5_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT6_USE_FINE_PS" VALUE="FALSE"/>
+        <PARAMETER NAME="C_PLL_NOTES" VALUE="No notes"/>
+        <PARAMETER NAME="C_PLL_BANDWIDTH" VALUE="OPTIMIZED"/>
+        <PARAMETER NAME="C_PLL_CLK_FEEDBACK" VALUE="CLKFBOUT"/>
+        <PARAMETER NAME="C_PLL_CLKFBOUT_MULT" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKIN_PERIOD" VALUE="1.000"/>
+        <PARAMETER NAME="C_PLL_COMPENSATION" VALUE="SYSTEM_SYNCHRONOUS"/>
+        <PARAMETER NAME="C_PLL_DIVCLK_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_REF_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="C_PLL_CLKOUT0_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKOUT1_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKOUT2_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKOUT3_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKOUT4_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKOUT5_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_PLL_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_PLL_CLKOUT1_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_PLL_CLKOUT2_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_PLL_CLKOUT3_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_PLL_CLKOUT4_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_PLL_CLKOUT5_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="C_PLL_CLKFBOUT_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_PLL_CLKOUT0_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_PLL_CLKOUT1_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_PLL_CLKOUT2_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_PLL_CLKOUT3_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_PLL_CLKOUT4_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_PLL_CLKOUT5_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="C_CLOCK_MGR_TYPE" VALUE="NA"/>
+        <PARAMETER NAME="C_OVERRIDE_MMCM" VALUE="0"/>
+        <PARAMETER NAME="C_OVERRIDE_PLL" VALUE="0"/>
+        <PARAMETER NAME="C_PRIMARY_PORT" VALUE="clk_in1"/>
+        <PARAMETER NAME="C_SECONDARY_PORT" VALUE="clk_in2"/>
+        <PARAMETER NAME="C_CLK_OUT1_PORT" VALUE="clk_out1"/>
+        <PARAMETER NAME="C_CLK_OUT2_PORT" VALUE="clk_out2"/>
+        <PARAMETER NAME="C_CLK_OUT3_PORT" VALUE="clk_out3"/>
+        <PARAMETER NAME="C_CLK_OUT4_PORT" VALUE="clk_out4"/>
+        <PARAMETER NAME="C_CLK_OUT5_PORT" VALUE="clk_out5"/>
+        <PARAMETER NAME="C_CLK_OUT6_PORT" VALUE="clk_out6"/>
+        <PARAMETER NAME="C_CLK_OUT7_PORT" VALUE="clk_out7"/>
+        <PARAMETER NAME="C_RESET_PORT" VALUE="reset"/>
+        <PARAMETER NAME="C_LOCKED_PORT" VALUE="locked"/>
+        <PARAMETER NAME="C_CLKFB_IN_PORT" VALUE="clkfb_in"/>
+        <PARAMETER NAME="C_CLKFB_IN_P_PORT" VALUE="clkfb_in_p"/>
+        <PARAMETER NAME="C_CLKFB_IN_N_PORT" VALUE="clkfb_in_n"/>
+        <PARAMETER NAME="C_CLKFB_OUT_PORT" VALUE="clkfb_out"/>
+        <PARAMETER NAME="C_CLKFB_OUT_P_PORT" VALUE="clkfb_out_p"/>
+        <PARAMETER NAME="C_CLKFB_OUT_N_PORT" VALUE="clkfb_out_n"/>
+        <PARAMETER NAME="C_POWER_DOWN_PORT" VALUE="power_down"/>
+        <PARAMETER NAME="C_DADDR_PORT" VALUE="daddr"/>
+        <PARAMETER NAME="C_DCLK_PORT" VALUE="dclk"/>
+        <PARAMETER NAME="C_DRDY_PORT" VALUE="drdy"/>
+        <PARAMETER NAME="C_DWE_PORT" VALUE="dwe"/>
+        <PARAMETER NAME="C_DIN_PORT" VALUE="din"/>
+        <PARAMETER NAME="C_DOUT_PORT" VALUE="dout"/>
+        <PARAMETER NAME="C_DEN_PORT" VALUE="den"/>
+        <PARAMETER NAME="C_PSCLK_PORT" VALUE="psclk"/>
+        <PARAMETER NAME="C_PSEN_PORT" VALUE="psen"/>
+        <PARAMETER NAME="C_PSINCDEC_PORT" VALUE="psincdec"/>
+        <PARAMETER NAME="C_PSDONE_PORT" VALUE="psdone"/>
+        <PARAMETER NAME="C_CLK_VALID_PORT" VALUE="CLK_VALID"/>
+        <PARAMETER NAME="C_STATUS_PORT" VALUE="STATUS"/>
+        <PARAMETER NAME="C_CLK_IN_SEL_PORT" VALUE="clk_in_sel"/>
+        <PARAMETER NAME="C_INPUT_CLK_STOPPED_PORT" VALUE="input_clk_stopped"/>
+        <PARAMETER NAME="C_CLKFB_STOPPED_PORT" VALUE="clkfb_stopped"/>
+        <PARAMETER NAME="C_CLKIN1_JITTER_PS" VALUE="100.0"/>
+        <PARAMETER NAME="C_CLKIN2_JITTER_PS" VALUE="100.0"/>
+        <PARAMETER NAME="C_PRIMITIVE" VALUE="MMCM"/>
+        <PARAMETER NAME="C_SS_MODE" VALUE="CENTER_HIGH"/>
+        <PARAMETER NAME="C_SS_MOD_PERIOD" VALUE="4000"/>
+        <PARAMETER NAME="C_HAS_CDDC" VALUE="0"/>
+        <PARAMETER NAME="C_CDDCDONE_PORT" VALUE="cddcdone"/>
+        <PARAMETER NAME="C_CDDCREQ_PORT" VALUE="cddcreq"/>
+        <PARAMETER NAME="C_CLKOUTPHY_MODE" VALUE="VCO"/>
+        <PARAMETER NAME="C_ENABLE_CLKOUTPHY" VALUE="0"/>
+        <PARAMETER NAME="C_INTERFACE_SELECTION" VALUE="0"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="11"/>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clk_wiz_0_0"/>
+        <PARAMETER NAME="PRIMITIVE" VALUE="MMCM"/>
+        <PARAMETER NAME="PRIMTYPE_SEL" VALUE="mmcm_adv"/>
+        <PARAMETER NAME="CLOCK_MGR_TYPE" VALUE="auto"/>
+        <PARAMETER NAME="USE_FREQ_SYNTH" VALUE="true"/>
+        <PARAMETER NAME="USE_SPREAD_SPECTRUM" VALUE="false"/>
+        <PARAMETER NAME="USE_PHASE_ALIGNMENT" VALUE="true"/>
+        <PARAMETER NAME="USE_MIN_POWER" VALUE="false"/>
+        <PARAMETER NAME="USE_DYN_PHASE_SHIFT" VALUE="false"/>
+        <PARAMETER NAME="USE_DYN_RECONFIG" VALUE="false"/>
+        <PARAMETER NAME="JITTER_SEL" VALUE="No_Jitter"/>
+        <PARAMETER NAME="PRIM_IN_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="IN_FREQ_UNITS" VALUE="Units_MHz"/>
+        <PARAMETER NAME="IN_JITTER_UNITS" VALUE="Units_UI"/>
+        <PARAMETER NAME="RELATIVE_INCLK" VALUE="REL_PRIMARY"/>
+        <PARAMETER NAME="USE_INCLK_SWITCHOVER" VALUE="false"/>
+        <PARAMETER NAME="SECONDARY_IN_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="SECONDARY_PORT" VALUE="clk_in2"/>
+        <PARAMETER NAME="SECONDARY_SOURCE" VALUE="Single_ended_clock_capable_pin"/>
+        <PARAMETER NAME="JITTER_OPTIONS" VALUE="UI"/>
+        <PARAMETER NAME="CLKIN1_UI_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="CLKIN2_UI_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="PRIM_IN_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="SECONDARY_IN_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="CLKIN1_JITTER_PS" VALUE="100.0"/>
+        <PARAMETER NAME="CLKIN2_JITTER_PS" VALUE="100.0"/>
+        <PARAMETER NAME="CLKOUT1_USED" VALUE="true"/>
+        <PARAMETER NAME="CLKOUT2_USED" VALUE="true"/>
+        <PARAMETER NAME="CLKOUT3_USED" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT4_USED" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT5_USED" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT6_USED" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT7_USED" VALUE="false"/>
+        <PARAMETER NAME="NUM_OUT_CLKS" VALUE="2"/>
+        <PARAMETER NAME="CLK_OUT1_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="CLK_OUT2_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="CLK_OUT3_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="CLK_OUT4_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="CLK_OUT5_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="CLK_OUT6_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="CLK_OUT7_USE_FINE_PS_GUI" VALUE="false"/>
+        <PARAMETER NAME="PRIMARY_PORT" VALUE="clk_in1"/>
+        <PARAMETER NAME="CLK_OUT1_PORT" VALUE="clk_out1"/>
+        <PARAMETER NAME="CLK_OUT2_PORT" VALUE="clk_out2"/>
+        <PARAMETER NAME="CLK_OUT3_PORT" VALUE="clk_out3"/>
+        <PARAMETER NAME="CLK_OUT4_PORT" VALUE="clk_out4"/>
+        <PARAMETER NAME="CLK_OUT5_PORT" VALUE="clk_out5"/>
+        <PARAMETER NAME="CLK_OUT6_PORT" VALUE="clk_out6"/>
+        <PARAMETER NAME="CLK_OUT7_PORT" VALUE="clk_out7"/>
+        <PARAMETER NAME="DADDR_PORT" VALUE="daddr"/>
+        <PARAMETER NAME="DCLK_PORT" VALUE="dclk"/>
+        <PARAMETER NAME="DRDY_PORT" VALUE="drdy"/>
+        <PARAMETER NAME="DWE_PORT" VALUE="dwe"/>
+        <PARAMETER NAME="DIN_PORT" VALUE="din"/>
+        <PARAMETER NAME="DOUT_PORT" VALUE="dout"/>
+        <PARAMETER NAME="DEN_PORT" VALUE="den"/>
+        <PARAMETER NAME="PSCLK_PORT" VALUE="psclk"/>
+        <PARAMETER NAME="PSEN_PORT" VALUE="psen"/>
+        <PARAMETER NAME="PSINCDEC_PORT" VALUE="psincdec"/>
+        <PARAMETER NAME="PSDONE_PORT" VALUE="psdone"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT2_REQUESTED_OUT_FREQ" VALUE="25.000"/>
+        <PARAMETER NAME="CLKOUT2_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT2_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT3_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT3_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT3_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT4_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT4_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT5_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT6_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT6_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT6_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="CLKOUT7_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT7_REQUESTED_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="CLKOUT7_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="USE_MAX_I_JITTER" VALUE="false"/>
+        <PARAMETER NAME="USE_MIN_O_JITTER" VALUE="false"/>
+        <PARAMETER NAME="PRIM_SOURCE" VALUE="Single_ended_clock_capable_pin"/>
+        <PARAMETER NAME="CLKOUT1_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="CLKOUT2_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="CLKOUT3_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="CLKOUT4_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="CLKOUT5_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="CLKOUT6_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="CLKOUT7_DRIVES" VALUE="BUFG"/>
+        <PARAMETER NAME="FEEDBACK_SOURCE" VALUE="FDBK_AUTO"/>
+        <PARAMETER NAME="CLKFB_IN_SIGNALING" VALUE="SINGLE"/>
+        <PARAMETER NAME="CLKFB_IN_PORT" VALUE="clkfb_in"/>
+        <PARAMETER NAME="CLKFB_IN_P_PORT" VALUE="clkfb_in_p"/>
+        <PARAMETER NAME="CLKFB_IN_N_PORT" VALUE="clkfb_in_n"/>
+        <PARAMETER NAME="CLKFB_OUT_PORT" VALUE="clkfb_out"/>
+        <PARAMETER NAME="CLKFB_OUT_P_PORT" VALUE="clkfb_out_p"/>
+        <PARAMETER NAME="CLKFB_OUT_N_PORT" VALUE="clkfb_out_n"/>
+        <PARAMETER NAME="PLATFORM" VALUE="UNKNOWN"/>
+        <PARAMETER NAME="SUMMARY_STRINGS" VALUE="empty"/>
+        <PARAMETER NAME="USE_LOCKED" VALUE="false"/>
+        <PARAMETER NAME="CALC_DONE" VALUE="empty"/>
+        <PARAMETER NAME="USE_RESET" VALUE="false"/>
+        <PARAMETER NAME="USE_POWER_DOWN" VALUE="false"/>
+        <PARAMETER NAME="USE_STATUS" VALUE="false"/>
+        <PARAMETER NAME="USE_FREEZE" VALUE="false"/>
+        <PARAMETER NAME="USE_CLK_VALID" VALUE="false"/>
+        <PARAMETER NAME="USE_INCLK_STOPPED" VALUE="false"/>
+        <PARAMETER NAME="USE_CLKFB_STOPPED" VALUE="false"/>
+        <PARAMETER NAME="RESET_PORT" VALUE="reset"/>
+        <PARAMETER NAME="LOCKED_PORT" VALUE="locked"/>
+        <PARAMETER NAME="POWER_DOWN_PORT" VALUE="power_down"/>
+        <PARAMETER NAME="CLK_VALID_PORT" VALUE="CLK_VALID"/>
+        <PARAMETER NAME="STATUS_PORT" VALUE="STATUS"/>
+        <PARAMETER NAME="CLK_IN_SEL_PORT" VALUE="clk_in_sel"/>
+        <PARAMETER NAME="INPUT_CLK_STOPPED_PORT" VALUE="input_clk_stopped"/>
+        <PARAMETER NAME="CLKFB_STOPPED_PORT" VALUE="clkfb_stopped"/>
+        <PARAMETER NAME="SS_MODE" VALUE="CENTER_HIGH"/>
+        <PARAMETER NAME="SS_MOD_FREQ" VALUE="250"/>
+        <PARAMETER NAME="OVERRIDE_MMCM" VALUE="false"/>
+        <PARAMETER NAME="MMCM_NOTES" VALUE="None"/>
+        <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="10.000"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKIN1_PERIOD" VALUE="10.0"/>
+        <PARAMETER NAME="MMCM_CLKIN2_PERIOD" VALUE="10.0"/>
+        <PARAMETER NAME="MMCM_CLKOUT4_CASCADE" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLOCK_HOLD" VALUE="false"/>
+        <PARAMETER NAME="MMCM_COMPENSATION" VALUE="ZHOLD"/>
+        <PARAMETER NAME="MMCM_REF_JITTER1" VALUE="0.010"/>
+        <PARAMETER NAME="MMCM_REF_JITTER2" VALUE="0.010"/>
+        <PARAMETER NAME="MMCM_STARTUP_WAIT" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="10.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT1_DIVIDE" VALUE="40"/>
+        <PARAMETER NAME="MMCM_CLKOUT1_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT1_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT1_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT2_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT2_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT2_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT2_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT3_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT3_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT3_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT4_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT4_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT4_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT4_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT5_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT5_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT5_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT5_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="MMCM_CLKOUT6_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT6_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="MMCM_CLKOUT6_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT6_USE_FINE_PS" VALUE="false"/>
+        <PARAMETER NAME="OVERRIDE_PLL" VALUE="false"/>
+        <PARAMETER NAME="PLL_NOTES" VALUE="None"/>
+        <PARAMETER NAME="PLL_BANDWIDTH" VALUE="OPTIMIZED"/>
+        <PARAMETER NAME="PLL_CLKFBOUT_MULT" VALUE="4"/>
+        <PARAMETER NAME="PLL_CLKFBOUT_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="PLL_CLK_FEEDBACK" VALUE="CLKFBOUT"/>
+        <PARAMETER NAME="PLL_DIVCLK_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKIN_PERIOD" VALUE="10.000"/>
+        <PARAMETER NAME="PLL_COMPENSATION" VALUE="SYSTEM_SYNCHRONOUS"/>
+        <PARAMETER NAME="PLL_REF_JITTER" VALUE="0.010"/>
+        <PARAMETER NAME="PLL_CLKOUT0_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="PLL_CLKOUT0_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="PLL_CLKOUT1_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKOUT1_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="PLL_CLKOUT1_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="PLL_CLKOUT2_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKOUT2_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="PLL_CLKOUT2_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="PLL_CLKOUT3_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKOUT3_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="PLL_CLKOUT3_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="PLL_CLKOUT4_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKOUT4_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="PLL_CLKOUT4_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="PLL_CLKOUT5_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="PLL_CLKOUT5_DUTY_CYCLE" VALUE="0.500"/>
+        <PARAMETER NAME="PLL_CLKOUT5_PHASE" VALUE="0.000"/>
+        <PARAMETER NAME="RESET_TYPE" VALUE="ACTIVE_HIGH"/>
+        <PARAMETER NAME="USE_SAFE_CLOCK_STARTUP" VALUE="false"/>
+        <PARAMETER NAME="USE_CLOCK_SEQUENCING" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT1_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="CLKOUT2_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="CLKOUT3_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="CLKOUT4_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="CLKOUT5_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="CLKOUT6_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="CLKOUT7_SEQUENCE_NUMBER" VALUE="1"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="CLK_IN1_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="CLK_IN2_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="DIFF_CLK_IN1_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="DIFF_CLK_IN2_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="RESET_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="ENABLE_CDDC" VALUE="false"/>
+        <PARAMETER NAME="CDDCDONE_PORT" VALUE="cddcdone"/>
+        <PARAMETER NAME="CDDCREQ_PORT" VALUE="cddcreq"/>
+        <PARAMETER NAME="ENABLE_CLKOUTPHY" VALUE="false"/>
+        <PARAMETER NAME="CLKOUTPHY_REQUESTED_FREQ" VALUE="600.000"/>
+        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="130.958"/>
+        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="98.575"/>
+        <PARAMETER NAME="CLKOUT2_JITTER" VALUE="175.402"/>
+        <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="98.575"/>
+        <PARAMETER NAME="CLKOUT3_JITTER" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT3_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT4_JITTER" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT4_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT5_JITTER" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT5_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT6_JITTER" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT6_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT7_JITTER" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT7_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="INTERFACE_SELECTION" VALUE="Enable_AXI"/>
+        <PARAMETER NAME="PHASE_DUTY_CONFIG" VALUE="false"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="External_Ports_clk100">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk100"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_gen_0" PORT="clk_pwm"/>
+            <CONNECTION INSTANCE="PWM_gen_1" PORT="clk_pwm"/>
+            <CONNECTION INSTANCE="xadc_0" PORT="clk100"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="25000000" DIR="O" NAME="clk_out2" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_XCLK"/>
+            <CONNECTION INSTANCE="IICctrl_0" PORT="iCLK"/>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clkb"/>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="PClk"/>
+            <CONNECTION INSTANCE="debounce_0" PORT="clk"/>
+            <CONNECTION INSTANCE="dilate_0" PORT="PCLK"/>
+            <CONNECTION INSTANCE="erode_0" PORT="PCLK"/>
+            <CONNECTION INSTANCE="ram_read_0" PORT="clk"/>
+            <CONNECTION INSTANCE="rgb2hsv_top_0" PORT="pclk"/>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_pclk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/colorDetect_0" HWVERSION="1.0" INSTANCE="colorDetect_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="colorDetect" VLNV="xilinx.com:XUP:colorDetect:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_colorDetect_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="PClk" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn_ColorExtract" SIGIS="undef" SIGNAME="External_Ports_btn_ColorExtract">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn_ColorExtract"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw_ColorClear" SIGIS="undef" SIGNAME="External_Ports_sw_ColorClear">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw_ColorClear"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="VtcHCnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="region_cut_0" PORT="valid_h_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="VtcVCnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="region_cut_0" PORT="valid_v_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="HSV24" RIGHT="0" SIGIS="undef" SIGNAME="rgb2hsv_top_0_HSV24">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2hsv_top_0" PORT="HSV24"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RGB24" RIGHT="0" SIGIS="undef" SIGNAME="rgb565_rgb888_0_rgb888">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb565_rgb888_0" PORT="rgb888"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="center_h" RIGHT="0" SIGIS="undef" SIGNAME="colorDetect_0_center_h">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="servo_ctrl_0" PORT="x"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="10" NAME="center_v" RIGHT="0" SIGIS="undef" SIGNAME="colorDetect_0_center_v">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="servo_ctrl_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RGB24_dis" RIGHT="0" SIGIS="undef" SIGNAME="colorDetect_0_RGB24_dis">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb888_rgb565_0" PORT="rgb888"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Binary_PreProcess" SIGIS="undef" SIGNAME="colorDetect_0_Binary_PreProcess">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="erode_0" PORT="pix_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Binary_PostProcess" SIGIS="undef" SIGNAME="dilate_0_pix_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dilate_0" PORT="pix_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/debounce_0" HWVERSION="1.0" INSTANCE="debounce_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="debounce" VLNV="xilinx.com:XUP:debounce:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_debounce_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="25000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clr" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i" SIGIS="undef" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o" SIGIS="undef" SIGNAME="debounce_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IICctrl_0" PORT="rst"/>
+            <CONNECTION INSTANCE="PWM_gen_0" PORT="clr_pwm"/>
+            <CONNECTION INSTANCE="PWM_gen_1" PORT="clr_pwm"/>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_rst"/>
+            <CONNECTION INSTANCE="xadc_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/dilate_0" HWVERSION="1.0" INSTANCE="dilate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dilate" VLNV="xilinx.com:XUP:dilate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_dilate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="PCLK" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="VtcHCnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="region_cut_0" PORT="valid_h_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="VtcVCnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="region_cut_0" PORT="valid_v_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pix_i" SIGIS="undef" SIGNAME="erode_0_pix_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="erode_0" PORT="pix_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pix_o" SIGIS="undef" SIGNAME="dilate_0_pix_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="Binary_PostProcess"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/erode_0" HWVERSION="1.0" INSTANCE="erode_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="erode" VLNV="xilinx.com:XUP:erode:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_erode_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="PCLK" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="VtcHCnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="region_cut_0" PORT="valid_h_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="VtcVCnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="region_cut_0" PORT="valid_v_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pix_i" SIGIS="undef" SIGNAME="colorDetect_0_Binary_PreProcess">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="Binary_PreProcess"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pix_o" SIGIS="undef" SIGNAME="erode_0_pix_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dilate_0" PORT="pix_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/move_en_0" HWVERSION="1.0" INSTANCE="move_en_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="move_en" VLNV="xilinx.com:XUP:move_en:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_move_en_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Move_EN" SIGIS="undef" SIGNAME="External_Ports_Move_EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Move_EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pwm_i" SIGIS="undef" SIGNAME="PWM_gen_0_PWM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_gen_0" PORT="PWM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pwm_o" SIGIS="undef" SIGNAME="move_en_0_pwm_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pwm_out_x"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/move_en_1" HWVERSION="1.0" INSTANCE="move_en_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="move_en" VLNV="xilinx.com:XUP:move_en:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_move_en_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Move_EN" SIGIS="undef" SIGNAME="External_Ports_Move_EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Move_EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pwm_i" SIGIS="undef" SIGNAME="PWM_gen_1_PWM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_gen_1" PORT="PWM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pwm_o" SIGIS="undef" SIGNAME="move_en_1_pwm_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pwm_out_y"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ov7725_regData_0" HWVERSION="1.0" INSTANCE="ov7725_regData_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ov7725_regData" VLNV="xilinx.com:XUP:ov7725_regData:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Read_DATA" VALUE="0"/>
+        <PARAMETER NAME="SET_OV7725" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ov7725_regData_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="LUT_INDEX" RIGHT="0" SIGIS="undef" SIGNAME="IICctrl_0_LUT_INDEX">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IICctrl_0" PORT="LUT_INDEX"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="LUT_DATA" RIGHT="0" SIGIS="undef" SIGNAME="ov7725_regData_0_LUT_DATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IICctrl_0" PORT="LUT_DATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Slave_Addr" RIGHT="0" SIGIS="undef" SIGNAME="ov7725_regData_0_Slave_Addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IICctrl_0" PORT="Slave_Addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ram_read_0" HWVERSION="1.0" INSTANCE="ram_read_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ram_read" VLNV="xilinx.com:XUP:ram_read:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="SHOW_H_START" VALUE="160"/>
+        <PARAMETER NAME="SHOW_V_START" VALUE="120"/>
+        <PARAMETER NAME="SHOW_WIDTH" VALUE="320"/>
+        <PARAMETER NAME="SHOW_HEIGHT" VALUE="240"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ram_read_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="25000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="valid" SIGIS="undef" SIGNAME="vga_0_vga_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="din" RIGHT="0" SIGIS="undef" SIGNAME="rgb888_rgb565_0_rgb565">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb888_rgb565_0" PORT="rgb565"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="16" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="vga_h_cnt" RIGHT="0" SIGIS="undef" SIGNAME="vga_0_vga_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_h_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="vga_v_cnt" RIGHT="0" SIGIS="undef" SIGNAME="vga_0_vga_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_v_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="vga_red" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_vga_red">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_red"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="vga_green" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_vga_green">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_green"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="vga_blue" RIGHT="0" SIGIS="undef" SIGNAME="ram_read_0_vga_blue">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_blue"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/region_cut_0" HWVERSION="1.0" INSTANCE="region_cut_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="region_cut" VLNV="xilinx.com:XUP:region_cut:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="SHOW_H_START" VALUE="160"/>
+        <PARAMETER NAME="SHOW_V_START" VALUE="120"/>
+        <PARAMETER NAME="SHOW_WIDTH" VALUE="320"/>
+        <PARAMETER NAME="SHOW_HEIGHT" VALUE="240"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_region_cut_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="11" NAME="vga_h_cnt" RIGHT="0" SIGIS="undef" SIGNAME="vga_0_vga_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_h_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="vga_v_cnt" RIGHT="0" SIGIS="undef" SIGNAME="vga_0_vga_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_0" PORT="vga_v_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="valid_h_cnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="VtcHCnt"/>
+            <CONNECTION INSTANCE="dilate_0" PORT="VtcHCnt"/>
+            <CONNECTION INSTANCE="erode_0" PORT="VtcHCnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="10" NAME="valid_v_cnt" RIGHT="0" SIGIS="undef" SIGNAME="region_cut_0_valid_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="VtcVCnt"/>
+            <CONNECTION INSTANCE="dilate_0" PORT="VtcVCnt"/>
+            <CONNECTION INSTANCE="erode_0" PORT="VtcVCnt"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/rgb2hsv_top_0" HWVERSION="1.0" INSTANCE="rgb2hsv_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2hsv_top" VLNV="xilinx.com:xup:rgb2hsv_top:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rgb2hsv_top_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="pclk" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RGB24" RIGHT="0" SIGIS="undef" SIGNAME="rgb565_rgb888_0_rgb888">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb565_rgb888_0" PORT="rgb888"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="HSV24" RIGHT="0" SIGIS="undef" SIGNAME="rgb2hsv_top_0_HSV24">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="HSV24"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/rgb565_rgb888_0" HWVERSION="1.0" INSTANCE="rgb565_rgb888_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb565_rgb888" VLNV="xilinx.com:XUP:rgb565_rgb888:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rgb565_rgb888_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="rgb565" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="rgb888" RIGHT="0" SIGIS="undef" SIGNAME="rgb565_rgb888_0_rgb888">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="RGB24"/>
+            <CONNECTION INSTANCE="rgb2hsv_top_0" PORT="RGB24"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/rgb888_rgb565_0" HWVERSION="1.0" INSTANCE="rgb888_rgb565_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb888_rgb565" VLNV="xilinx.com:XUP:rgb888_rgb565:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_rgb888_rgb565_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="rgb888" RIGHT="0" SIGIS="undef" SIGNAME="colorDetect_0_RGB24_dis">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="RGB24_dis"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="rgb565" RIGHT="0" SIGIS="undef" SIGNAME="rgb888_rgb565_0_rgb565">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ram_read_0" PORT="din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/servo_ctrl_0" HWVERSION="1.0" INSTANCE="servo_ctrl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="servo_ctrl" VLNV="xilinx.com:XUP:servo_ctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_servo_ctrl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="vsync_in" SIGIS="undef" SIGNAME="External_Ports_OV7725_VSYNC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OV7725_VSYNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="x" RIGHT="0" SIGIS="undef" SIGNAME="colorDetect_0_center_h">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="center_h"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="y" RIGHT="0" SIGIS="undef" SIGNAME="colorDetect_0_center_v">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="colorDetect_0" PORT="center_v"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ad_data_x" RIGHT="0" SIGIS="undef" SIGNAME="xadc_0_aux_out_7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xadc_0" PORT="aux_out_7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ad_data_y" RIGHT="0" SIGIS="undef" SIGNAME="xadc_0_aux_out_6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xadc_0" PORT="aux_out_6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="14" NAME="duty_x" RIGHT="0" SIGIS="undef" SIGNAME="servo_ctrl_0_duty_x">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_gen_0" PORT="duty"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="14" NAME="duty_y" RIGHT="0" SIGIS="undef" SIGNAME="servo_ctrl_0_duty_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_gen_1" PORT="duty"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/vga_0" HWVERSION="1.0" INSTANCE="vga_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vga" VLNV="xilinx.com:XUP:vga:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="HD" VALUE="640"/>
+        <PARAMETER NAME="HF" VALUE="48"/>
+        <PARAMETER NAME="HA" VALUE="16"/>
+        <PARAMETER NAME="HB" VALUE="96"/>
+        <PARAMETER NAME="HT" VALUE="800"/>
+        <PARAMETER NAME="VD" VALUE="480"/>
+        <PARAMETER NAME="VF" VALUE="33"/>
+        <PARAMETER NAME="VA" VALUE="10"/>
+        <PARAMETER NAME="VB" VALUE="2"/>
+        <PARAMETER NAME="VT" VALUE="525"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_vga_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="vga_pclk" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vga_rst" SIGIS="undef" SIGNAME="debounce_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vga_hsync" SIGIS="undef" SIGNAME="vga_0_vga_hsync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_hsync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vga_vsync" SIGIS="undef" SIGNAME="vga_0_vga_vsync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_vsync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vga_valid" SIGIS="undef" SIGNAME="vga_0_vga_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ram_read_0" PORT="valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="vga_h_cnt" RIGHT="0" SIGIS="undef" SIGNAME="vga_0_vga_h_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ram_read_0" PORT="vga_h_cnt"/>
+            <CONNECTION INSTANCE="region_cut_0" PORT="vga_h_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="10" NAME="vga_v_cnt" RIGHT="0" SIGIS="undef" SIGNAME="vga_0_vga_v_cnt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ram_read_0" PORT="vga_v_cnt"/>
+            <CONNECTION INSTANCE="region_cut_0" PORT="vga_v_cnt"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xadc_0" HWVERSION="1.0" INSTANCE="xadc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xadc" VLNV="xilinx.com:XUP:xadc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="init_read" VALUE="&quot;00000000&quot;"/>
+        <PARAMETER NAME="read_waitdrdy" VALUE="&quot;00000001&quot;"/>
+        <PARAMETER NAME="write_waitdrdy" VALUE="&quot;00000011&quot;"/>
+        <PARAMETER NAME="read_reg00" VALUE="&quot;00000100&quot;"/>
+        <PARAMETER NAME="reg00_waitdrdy" VALUE="&quot;00000101&quot;"/>
+        <PARAMETER NAME="read_reg01" VALUE="&quot;00000110&quot;"/>
+        <PARAMETER NAME="reg01_waitdrdy" VALUE="&quot;00000111&quot;"/>
+        <PARAMETER NAME="read_reg02" VALUE="&quot;00001000&quot;"/>
+        <PARAMETER NAME="reg02_waitdrdy" VALUE="&quot;00001001&quot;"/>
+        <PARAMETER NAME="read_reg06" VALUE="&quot;00001010&quot;"/>
+        <PARAMETER NAME="reg06_waitdrdy" VALUE="&quot;00001011&quot;"/>
+        <PARAMETER NAME="read_reg10" VALUE="&quot;00001100&quot;"/>
+        <PARAMETER NAME="reg10_waitdrdy" VALUE="&quot;00001101&quot;"/>
+        <PARAMETER NAME="read_reg11" VALUE="&quot;00001110&quot;"/>
+        <PARAMETER NAME="reg11_waitdrdy" VALUE="&quot;00001111&quot;"/>
+        <PARAMETER NAME="read_reg12" VALUE="&quot;00010000&quot;"/>
+        <PARAMETER NAME="reg12_waitdrdy" VALUE="&quot;00010001&quot;"/>
+        <PARAMETER NAME="read_reg13" VALUE="&quot;00010010&quot;"/>
+        <PARAMETER NAME="reg13_waitdrdy" VALUE="&quot;00010011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xadc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk100" SIGIS="undef" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="debounce_0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxp6" SIGIS="undef" SIGNAME="External_Ports_vauxp6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxp6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxn6" SIGIS="undef" SIGNAME="External_Ports_vauxn6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxn6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxp7" SIGIS="undef" SIGNAME="External_Ports_vauxp7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxp7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxn7" SIGIS="undef" SIGNAME="External_Ports_vauxn7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxn7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxp14" SIGIS="undef" SIGNAME="External_Ports_vauxp14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxp14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxn14" SIGIS="undef" SIGNAME="External_Ports_vauxn14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxn14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxp15" SIGIS="undef" SIGNAME="External_Ports_vauxp15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxp15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vauxn15" SIGIS="undef" SIGNAME="External_Ports_vauxn15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vauxn15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="temperature_out" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="aux_out_6" RIGHT="0" SIGIS="undef" SIGNAME="xadc_0_aux_out_6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="servo_ctrl_0" PORT="ad_data_y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="aux_out_7" RIGHT="0" SIGIS="undef" SIGNAME="xadc_0_aux_out_7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="servo_ctrl_0" PORT="ad_data_x"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="aux_out_14" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="aux_out_15" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debounce_0" PORT="clr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+  <REPOSITORIES/>
+
+</EDKSYSTEM>

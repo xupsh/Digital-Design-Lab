@@ -1,0 +1,21 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_clear.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module oled_clear
+WARNING: [VRFC 10-756] identifier cur_st is used before its declaration [E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_clear.v:34]
+WARNING: [VRFC 10-756] identifier cur_st is used before its declaration [E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_clear.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_write_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module oled_write_data
+WARNING: [VRFC 10-756] identifier cur_st is used before its declaration [E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_write_data.v:37]
+WARNING: [VRFC 10-756] identifier cur_st is used before its declaration [E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_write_data.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.srcs/sources_1/new/spi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+WARNING: [VRFC 10-756] identifier count is used before its declaration [E:/Basys3/OLED/OLED.srcs/sources_1/new/spi_master.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.srcs/sources_1/new/oled.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module oled_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module oled_top
+WARNING: [VRFC 10-756] identifier reset_n is used before its declaration [E:/Basys3/OLED/OLED.srcs/sources_1/new/oled_top.v:36]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Basys3/OLED/OLED.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

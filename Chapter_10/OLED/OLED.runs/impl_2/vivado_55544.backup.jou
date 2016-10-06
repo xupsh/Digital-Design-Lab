@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Jan 28 17:30:40 2016
+# Process ID: 55068
+# Log file: C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.runs/impl_2/oled_top.vdi
+# Journal file: C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source oled_top.tcl -notrace

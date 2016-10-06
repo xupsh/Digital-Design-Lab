@@ -1,0 +1,598 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -mode batch -messageDb vivado.pb -source design_1_wrapper.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.cache/wt [current_project]
+# set_property parent.project_path C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock_IP [current_project]
+# add_files C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+# set_property used_in_implementation false [get_files -all c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
+# set_property used_in_implementation false [get_files -all c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
+# set_property used_in_implementation false [get_files -all c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
+# set_property used_in_implementation false [get_files -all C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+# set_property is_locked true [get_files C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/design_1.bd]
+# read_verilog -library xil_defaultlib C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+# read_xdc C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/constrs_1/imports/Digital_Clock/clock_wrapper.xdc
+# set_property used_in_implementation false [get_files C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/constrs_1/imports/Digital_Clock/clock_wrapper.xdc]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file design_1_wrapper.hwdef }
+# synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 253.914 ; gain = 94.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1.v:12]
+INFO: [Synth 8-638] synthesizing module 'GND' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3852]
+INFO: [Synth 8-256] done synthesizing module 'GND' (1#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3852]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_div_0_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_div_0_0/synth/design_1_clk_div_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/clk_div_v1_0/c9e9a252/clk_div.v:23]
+	Parameter N bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (2#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/clk_div_v1_0/c9e9a252/clk_div.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_div_0_0' (3#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_div_0_0/synth/design_1_clk_div_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10250]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (4#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10250]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter CLKOUT1_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (5#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (6#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (7#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0' (8#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_decimal_counter_0_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_0_0/synth/design_1_decimal_counter_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'decimal_counter' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/decimal_counter_v1_0/0029758a/src/decimal_counter.v:8]
+	Parameter DELAY bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'decimal_counter' (9#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/decimal_counter_v1_0/0029758a/src/decimal_counter.v:8]
+INFO: [Synth 8-256] done synthesizing module 'design_1_decimal_counter_0_0' (10#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_0_0/synth/design_1_decimal_counter_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_decimal_counter_1_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_1_0/synth/design_1_decimal_counter_1_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1_decimal_counter_1_0' (11#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_1_0/synth/design_1_decimal_counter_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_decimal_counter_2_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_2_0/synth/design_1_decimal_counter_2_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1_decimal_counter_2_0' (12#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_2_0/synth/design_1_decimal_counter_2_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_decimal_counter_3_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_3_0/synth/design_1_decimal_counter_3_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1_decimal_counter_3_0' (13#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_decimal_counter_3_0/synth/design_1_decimal_counter_3_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_four_2_input_and_gate_0_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_four_2_input_and_gate_0_0/synth/design_1_four_2_input_and_gate_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'four_2_input_and_gate' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/four_2_input_and_gate_v1_0/d8714d20/src/four_2_input_and.v:8]
+	Parameter DELAY bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'four_2_input_and_gate' (14#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/four_2_input_and_gate_v1_0/d8714d20/src/four_2_input_and.v:8]
+INFO: [Synth 8-256] done synthesizing module 'design_1_four_2_input_and_gate_0_0' (15#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_four_2_input_and_gate_0_0/synth/design_1_four_2_input_and_gate_0_0.v:57]
+WARNING: [Synth 8-350] instance 'four_2_input_and_gate_0' of module 'design_1_four_2_input_and_gate_0_0' requires 12 connections, but only 8 given [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1.v:118]
+INFO: [Synth 8-638] synthesizing module 'design_1_seg7decimal_0_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_seg7decimal_0_0/synth/design_1_seg7decimal_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'seg7decimal' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/3e6b6abc/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-226] default block is never used [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/3e6b6abc/sources_1/new/seg7decimal.v:47]
+INFO: [Synth 8-226] default block is never used [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/3e6b6abc/sources_1/new/seg7decimal.v:60]
+INFO: [Synth 8-256] done synthesizing module 'seg7decimal' (16#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/3e6b6abc/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_seg7decimal_0_0' (17#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_seg7decimal_0_0/synth/design_1_seg7decimal_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (18#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (19#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_1_0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_1_0/synth/design_1_xlconcat_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized0' [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 8 - type: integer 
+	Parameter NUM_PORTS bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized0' (19#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_1_0' (20#1) [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_1_0/synth/design_1_xlconcat_1_0.v:57]
+WARNING: [Synth 8-350] instance 'xlconcat_1' of module 'design_1_xlconcat_1_0' requires 9 connections, but only 8 given [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1.v:152]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (21#1) [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1.v:12]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (22#1) [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 287.945 ; gain = 128.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin four_2_input_and_gate_0:b1 to constant 0 [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1.v:118]
+WARNING: [Synth 8-3295] tying undriven pin xlconcat_1:In6[0] to constant 0 [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/hdl/design_1.v:152]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 287.945 ; gain = 128.426
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/constrs_1/imports/Digital_Clock/clock_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.srcs/constrs_1/imports/Digital_Clock/clock_wrapper.xdc]
+Parsing XDC File [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 565.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 7).
+Applied set_property DONT_TOUCH = true for design_1_i/decimal_counter_0. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for design_1_i/decimal_counter_1. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 13).
+Applied set_property DONT_TOUCH = true for design_1_i/decimal_counter_2. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 16).
+Applied set_property DONT_TOUCH = true for design_1_i/decimal_counter_3. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 19).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_div_0. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 22).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 25).
+Applied set_property DONT_TOUCH = true for design_1_i/four_2_input_and_gate_0. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 28).
+Applied set_property DONT_TOUCH = true for design_1_i/seg7decimal_0. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 31).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 34).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_1. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 37).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_13/Digital_Clock/Digital_Clock.runs/synth_1/dont_touch.xdc, line 40).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "count0" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module design_1_wrapper 
+Detailed RTL Component Info : 
+Module clk_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module design_1_clk_div_0_0 
+Detailed RTL Component Info : 
+Module design_1_clk_wiz_0_0_clk_wiz 
+Detailed RTL Component Info : 
+Module design_1_clk_wiz_0_0 
+Detailed RTL Component Info : 
+Module decimal_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 4     
+Module design_1_decimal_counter_0_0 
+Detailed RTL Component Info : 
+Module design_1_decimal_counter_1_0 
+Detailed RTL Component Info : 
+Module design_1_decimal_counter_2_0 
+Detailed RTL Component Info : 
+Module design_1_decimal_counter_3_0 
+Detailed RTL Component Info : 
+Module four_2_input_and_gate 
+Detailed RTL Component Info : 
+Module design_1_four_2_input_and_gate_0_0 
+Detailed RTL Component Info : 
+Module seg7decimal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module design_1_seg7decimal_0_0 
+Detailed RTL Component Info : 
+Module xlconcat 
+Detailed RTL Component Info : 
+Module design_1_xlconcat_0_0 
+Detailed RTL Component Info : 
+Module xlconcat__parameterized0 
+Detailed RTL Component Info : 
+Module design_1_xlconcat_1_0 
+Detailed RTL Component Info : 
+Module design_1 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module design_1_decimal_counter_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module design_1_decimal_counter_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module design_1_decimal_counter_1_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module design_1_decimal_counter_1_0.
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module design_1_decimal_counter_2_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module design_1_decimal_counter_2_0.
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module design_1_decimal_counter_3_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module design_1_decimal_counter_3_0.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin four_2_input_and_gate_0:b1 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin xlconcat_1:In6[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |GND        |     1|
+|3     |INV        |     8|
+|4     |LUT1       |     2|
+|5     |LUT2       |    13|
+|6     |LUT3       |    13|
+|7     |LUT4       |    27|
+|8     |LUT5       |     9|
+|9     |LUT6       |     9|
+|10    |MMCME2_ADV |     1|
+|11    |MUXCY_L    |    50|
+|12    |XORCY      |    52|
+|13    |FDCE       |    36|
+|14    |FDPE       |     8|
+|15    |FDRE       |    37|
+|16    |LDC        |     8|
+|17    |IBUF       |     3|
+|18    |OBUF       |    20|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------+-----------------------------------+------+
+|      |Instance                    |Module                             |Cells |
++------+----------------------------+-----------------------------------+------+
+|1     |top                         |                                   |   300|
+|2     |  design_1_i                |design_1                           |   278|
+|3     |    clk_div_0               |design_1_clk_div_0_0               |   105|
+|4     |      inst                  |clk_div                            |   105|
+|5     |    clk_wiz_0               |design_1_clk_wiz_0_0               |     5|
+|6     |      inst                  |design_1_clk_wiz_0_0_clk_wiz       |     5|
+|7     |    decimal_counter_0       |design_1_decimal_counter_0_0       |    21|
+|8     |      inst                  |decimal_counter_2                  |    21|
+|9     |    decimal_counter_1       |design_1_decimal_counter_1_0       |    21|
+|10    |      inst                  |decimal_counter_1                  |    21|
+|11    |    decimal_counter_2       |design_1_decimal_counter_2_0       |    21|
+|12    |      inst                  |decimal_counter_0                  |    21|
+|13    |    decimal_counter_3       |design_1_decimal_counter_3_0       |    21|
+|14    |      inst                  |decimal_counter                    |    21|
+|15    |    four_2_input_and_gate_0 |design_1_four_2_input_and_gate_0_0 |     4|
+|16    |    seg7decimal_0           |design_1_seg7decimal_0_0           |    79|
+|17    |      inst                  |seg7decimal                        |    79|
+|18    |    xlconcat_0              |design_1_xlconcat_0_0              |     0|
+|19    |    xlconcat_1              |design_1_xlconcat_1_0              |     0|
++------+----------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 565.145 ; gain = 405.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 565.145 ; gain = 86.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 565.145 ; gain = 405.625
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 24 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 13 instances
+  LDC => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 565.383 ; gain = 363.645
+# write_checkpoint -noxdef design_1_wrapper.dcp
+# catch { report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 565.383 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 20 12:08:48 2016...

@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "tb_func_synth.v"
+verilog xil_defaultlib  "../../../../OLED.srcs/sim_1/new/tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

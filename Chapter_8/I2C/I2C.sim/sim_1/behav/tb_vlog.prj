@@ -1,0 +1,5 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../I2C.srcs/sim_1/new/tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

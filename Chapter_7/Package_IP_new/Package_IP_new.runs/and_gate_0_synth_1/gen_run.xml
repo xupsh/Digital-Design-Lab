@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="and_gate_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1474958232">
+  <File Type="RDS-PROPCONSTRS" Name="and_gate_0_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="and_gate_0.tcl"/>
+  <File Type="RDS-RDS" Name="and_gate_0.vds"/>
+  <File Type="RDS-UTIL" Name="and_gate_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="and_gate_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="and_gate_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="and_gate_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="and_gate_0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/and_gate_0">
+    <File Path="$PSRCDIR/sources_1/ip/and_gate_0/and_gate_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="and_gate_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/and_gate_0">
+    <File Path="$PSRCDIR/sources_1/ip/and_gate_0/and_gate_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="and_gate_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

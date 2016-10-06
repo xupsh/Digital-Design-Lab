@@ -1,0 +1,57 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port vga_hsync -pg 1 -y 180 -defaultsOSRD
+preplace port OV7725_SIOC -pg 1 -y 40 -defaultsOSRD
+preplace port sw_ColorClear -pg 1 -y 180 -defaultsOSRD
+preplace port btn_ColorExtract -pg 1 -y 120 -defaultsOSRD
+preplace port OV7725_SIOD -pg 1 -y 60 -defaultsOSRD
+preplace port OV7725_PCLK -pg 1 -y 80 -defaultsOSRD
+preplace port Config_Done -pg 1 -y 20 -defaultsOSRD
+preplace port vauxp6 -pg 1 -y 280 -defaultsOSRD
+preplace port vauxp7 -pg 1 -y 300 -defaultsOSRD
+preplace port clk100 -pg 1 -y 140 -defaultsOSRD
+preplace port vauxp14 -pg 1 -y 320 -defaultsOSRD
+preplace port rst -pg 1 -y 160 -defaultsOSRD
+preplace port OV7725_VSYNC -pg 1 -y 100 -defaultsOSRD
+preplace port vauxp15 -pg 1 -y 340 -defaultsOSRD
+preplace port vauxn14 -pg 1 -y 240 -defaultsOSRD
+preplace port vauxn6 -pg 1 -y 200 -defaultsOSRD
+preplace port pwm_out_x -pg 1 -y 100 -defaultsOSRD
+preplace port OV7725_XCLK -pg 1 -y 80 -defaultsOSRD
+preplace port OV7725_HREF -pg 1 -y 60 -defaultsOSRD
+preplace port vauxn15 -pg 1 -y 260 -defaultsOSRD
+preplace port vauxn7 -pg 1 -y 220 -defaultsOSRD
+preplace port pwm_out_y -pg 1 -y 120 -defaultsOSRD
+preplace port Move_EN -pg 1 -y 20 -defaultsOSRD
+preplace port vga_vsync -pg 1 -y 220 -defaultsOSRD
+preplace portBus vga_green -pg 1 -y 160 -defaultsOSRD
+preplace portBus vga_red -pg 1 -y 200 -defaultsOSRD
+preplace portBus OV7725_D -pg 1 -y 40 -defaultsOSRD
+preplace portBus vga_blue -pg 1 -y 140 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 620 -defaultsOSRD
+preplace inst move_en_0 -pg 1 -lvl 2 -y 330 -defaultsOSRD
+preplace inst rgb2hsv_top_0 -pg 1 -lvl 2 -y 890 -defaultsOSRD
+preplace inst move_en_1 -pg 1 -lvl 2 -y 430 -defaultsOSRD
+preplace inst vga_0 -pg 1 -lvl 1 -y 500 -defaultsOSRD
+preplace inst PWM_gen_0 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst rgb565_rgb888_0 -pg 1 -lvl 2 -y 980 -defaultsOSRD
+preplace inst dilate_0 -pg 1 -lvl 2 -y 70 -defaultsOSRD
+preplace inst PWM_gen_1 -pg 1 -lvl 3 -y 320 -defaultsOSRD
+preplace inst debounce_0 -pg 1 -lvl 3 -y 1040 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 430 -defaultsOSRD
+preplace inst colorDetect_0 -pg 1 -lvl 3 -y 770 -defaultsOSRD
+preplace inst xadc_0 -pg 1 -lvl 1 -y 290 -defaultsOSRD
+preplace inst rgb888_rgb565_0 -pg 1 -lvl 2 -y 1060 -defaultsOSRD
+preplace inst servo_ctrl_0 -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace inst region_cut_0 -pg 1 -lvl 2 -y 790 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 930 -defaultsOSRD
+preplace inst IICctrl_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace inst ram_read_0 -pg 1 -lvl 2 -y 560 -defaultsOSRD
+preplace inst ov7725_regData_0 -pg 1 -lvl 2 -y 690 -defaultsOSRD
+preplace inst erode_0 -pg 1 -lvl 2 -y 210 -defaultsOSRD
+preplace inst cam_ov7670_ov7725_0 -pg 1 -lvl 3 -y 570 -defaultsOSRD
+levelinfo -pg 1 140 290 550 830 1000
+",
+}
+0

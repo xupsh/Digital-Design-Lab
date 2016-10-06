@@ -1,0 +1,501 @@
+
+*** Running vivado
+    with args -log example_top.vds -m64 -mode batch -messageDb vivado.pb -source example_top.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source example_top.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.cache/wt [current_project]
+# set_property parent.project_path e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths e:/Basys3/DDR2_test/tcl_pro/HDL_source/IP_Catalog [current_project]
+# add_files -quiet e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/mig_7series_0_synth_1/mig_7series_0.dcp
+# set_property used_in_implementation false [get_files e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/mig_7series_0_synth_1/mig_7series_0.dcp]
+# read_verilog -library xil_defaultlib {
+#   e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v
+#   e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v
+# }
+# read_xdc e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/constrs_1/imports/Constraint/ddr.xdc
+# set_property used_in_implementation false [get_files e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/constrs_1/imports/Constraint/ddr.xdc]
+# catch { write_hwdef -file example_top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top example_top -part xc7a100tcsg324-1
+Command: synth_design -top example_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 239.699 ; gain = 79.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'example_top' [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:74]
+	Parameter PORT_MODE bound to: BI_MODE - type: string 
+	Parameter DATA_MODE bound to: 4'b0010 
+	Parameter TST_MEM_INSTR_MODE bound to: R_W_INSTR_MODE - type: string 
+	Parameter EYE_TEST bound to: FALSE - type: string 
+	Parameter DATA_PATTERN bound to: DGEN_ALL - type: string 
+	Parameter CMD_PATTERN bound to: CGEN_ALL - type: string 
+	Parameter CMD_WDT bound to: 1023 - type: integer 
+	Parameter WR_WDT bound to: 8191 - type: integer 
+	Parameter RD_WDT bound to: 1023 - type: integer 
+	Parameter SEL_VICTIM_LINE bound to: 0 - type: integer 
+	Parameter BEGIN_ADDRESS bound to: 0 - type: integer 
+	Parameter END_ADDRESS bound to: 16777215 - type: integer 
+	Parameter PRBS_EADDR_MASK_POS bound to: -16777216 - type: integer 
+	Parameter BANK_WIDTH bound to: 3 - type: integer 
+	Parameter COL_WIDTH bound to: 10 - type: integer 
+	Parameter CS_WIDTH bound to: 1 - type: integer 
+	Parameter DQ_WIDTH bound to: 16 - type: integer 
+	Parameter DQS_WIDTH bound to: 2 - type: integer 
+	Parameter DQS_CNT_WIDTH bound to: 1 - type: integer 
+	Parameter DRAM_WIDTH bound to: 8 - type: integer 
+	Parameter ECC bound to: OFF - type: string 
+	Parameter ECC_TEST bound to: OFF - type: string 
+	Parameter nBANK_MACHS bound to: 4 - type: integer 
+	Parameter RANKS bound to: 1 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter ADDR_WIDTH bound to: 27 - type: integer 
+	Parameter BURST_MODE bound to: 8 - type: string 
+	Parameter SIMULATION bound to: FALSE - type: string 
+	Parameter TCQ bound to: 100 - type: integer 
+	Parameter DRAM_TYPE bound to: DDR2 - type: string 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter DEBUG_PORT bound to: ON - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter RANK_WIDTH bound to: 1 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 16 - type: integer 
+	Parameter BURST_LENGTH bound to: 8 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 16 - type: integer 
+	Parameter TG_ADDR_WIDTH bound to: 26 - type: integer 
+	Parameter MASK_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:294]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:295]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:296]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:297]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:298]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:299]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:300]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:301]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:302]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:303]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:304]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:305]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:306]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:307]
+INFO: [Synth 8-4472] Detected and applied attribute keep = true [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:308]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_0' [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/realtime/mig_7series_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_0' (2#1) [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/realtime/mig_7series_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'user_ddr' [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:23]
+	Parameter write_cmd bound to: 0 - type: integer 
+	Parameter read_cmd bound to: 1 - type: integer 
+	Parameter idle bound to: 0 - type: integer 
+	Parameter write_pre bound to: 1 - type: integer 
+	Parameter write bound to: 2 - type: integer 
+	Parameter write_idle bound to: 3 - type: integer 
+	Parameter read_pre bound to: 4 - type: integer 
+	Parameter read bound to: 5 - type: integer 
+WARNING: [Synth 8-3848] Net app_wdf_mask in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:29]
+WARNING: [Synth 8-3848] Net app_sr_req in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:36]
+WARNING: [Synth 8-3848] Net app_ref_req in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:37]
+WARNING: [Synth 8-3848] Net app_zq_req in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:38]
+INFO: [Synth 8-256] done synthesizing module 'user_ddr' (3#1) [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'app_wdf_data' does not match port width (129) of module 'user_ddr' [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:556]
+WARNING: [Synth 8-689] width (128) of port connection 'app_rd_data' does not match port width (129) of module 'user_ddr' [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:559]
+INFO: [Synth 8-256] done synthesizing module 'example_top' (4#1) [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/example_top.v:74]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 273.871 ; gain = 113.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 273.871 ; gain = 113.789
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
+Finished Parsing XDC File [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
+Parsing XDC File [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc] for cell 'u_mig_7series_0'
+Finished Parsing XDC File [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc] for cell 'u_mig_7series_0'
+Parsing XDC File [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/constrs_1/imports/Constraint/ddr.xdc]
+Finished Parsing XDC File [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/constrs_1/imports/Constraint/ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/constrs_1/imports/Constraint/ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/example_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/example_top_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 587.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.runs/synth_1/.Xil/Vivado-30872-XSHZHEHENGT30/dcp_2/mig_7series_0_in_context.xdc, line 45).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'user_ddr'
+ROM "nxt_st" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "nxt_st" won't be mapped to RAM because it is too sparse.
+ROM "nxt_st" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "nxt_st" won't be mapped to RAM because it is too sparse.
+ROM "addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "delay_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+ROM "nxt_st" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'one-hot' in module 'user_ddr'
+WARNING: [Synth 8-3848] Net app_wdf_mask in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:29]
+WARNING: [Synth 8-3848] Net app_sr_req in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:36]
+WARNING: [Synth 8-3848] Net app_ref_req in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:37]
+WARNING: [Synth 8-3848] Net app_zq_req in module/entity user_ddr does not have driver. [e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/imports/HDL_source/user_ddr.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	              129 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               27 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     27 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module example_top 
+Detailed RTL Component Info : 
+Module user_ddr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	              129 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               27 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     27 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "user_ddr/nxt_st" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "user_ddr/nxt_st" won't be mapped to RAM because it is too sparse.
+ROM "user_ddr/nxt_st" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "user_ddr/nxt_st" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 587.527 ; gain = 427.445
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\user_ddr/addr_reg[1] ) is unused and will be removed from module example_top.
+WARNING: [Synth 8-3332] Sequential element (\user_ddr/addr_reg[0] ) is unused and will be removed from module example_top.
+WARNING: [Synth 8-3332] Sequential element (\user_ddr/app_addr_reg[1] ) is unused and will be removed from module example_top.
+WARNING: [Synth 8-3332] Sequential element (\user_ddr/app_addr_reg[0] ) is unused and will be removed from module example_top.
+WARNING: [Synth 8-3332] Sequential element (\user_ddr/app_wdf_data_reg[128] ) is unused and will be removed from module example_top.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 587.527 ; gain = 427.445
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |mig_7series_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |clk_wiz_0     |     1|
+|2     |mig_7series_0 |     1|
+|3     |CARRY4        |    55|
+|4     |LUT1          |   204|
+|5     |LUT2          |   164|
+|6     |LUT3          |    33|
+|7     |LUT4          |    10|
+|8     |LUT5          |    43|
+|9     |LUT6          |    19|
+|10    |FDCE          |   392|
+|11    |FDPE          |     1|
+|12    |IBUF          |     1|
+|13    |OBUF          |     3|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-----------+---------+------+
+|      |Instance   |Module   |Cells |
++------+-----------+---------+------+
+|1     |top        |         |  1092|
+|2     |  user_ddr |user_ddr |   900|
++------+-----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 587.527 ; gain = 427.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 587.527 ; gain = 79.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 587.527 ; gain = 427.445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 587.527 ; gain = 395.449
+# write_checkpoint -noxdef example_top.dcp
+# catch { report_utilization -file example_top_utilization_synth.rpt -pb example_top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 587.527 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 25 15:13:31 2016...

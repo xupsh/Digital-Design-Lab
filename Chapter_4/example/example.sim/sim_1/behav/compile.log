@@ -1,0 +1,8 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_4/example/example.srcs/sources_1/new/scan_led_hex_disp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_led_hex_disp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_4/example/example.srcs/sim_1/new/scan_led_hex_disp_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_led_hex_disp_test
+ERROR: [VRFC 10-91] sw is not declared [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_4/example/example.srcs/sim_1/new/scan_led_hex_disp_test.v:30]
+ERROR: [VRFC 10-91] sw is not declared [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_4/example/example.srcs/sim_1/new/scan_led_hex_disp_test.v:31]
+ERROR: [VRFC 10-1040] module scan_led_hex_disp_test ignored due to previous errors [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_4/example/example.srcs/sim_1/new/scan_led_hex_disp_test.v:22]

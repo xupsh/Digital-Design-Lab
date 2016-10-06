@@ -1,0 +1,64 @@
+
+*** Running vivado
+    with args -log mult_while.vds -m64 -mode batch -messageDb vivado.pb -source mult_while.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source mult_while.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_3/Loop_Statement/Loop_Statement.cache/wt [current_project]
+# set_property parent.project_path C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_3/Loop_Statement/Loop_Statement.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_3/Loop_Statement/Loop_Statement.srcs/sources_1/new/mult_while.v
+# catch { write_hwdef -file mult_while.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top mult_while -part xc7a35tcpg236-1
+Command: synth_design -top mult_while -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 239.637 ; gain = 80.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_while' [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_3/Loop_Statement/Loop_Statement.srcs/sources_1/new/mult_while.v:23]
+ERROR: [Synth 8-403] loop limit (65536) exceeded [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_3/Loop_Statement/Loop_Statement.srcs/sources_1/new/mult_while.v:33]
+ERROR: [Synth 8-285] failed synthesizing module 'mult_while' [C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_3/Loop_Statement/Loop_Statement.srcs/sources_1/new/mult_while.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 634.277 ; gain = 474.750
+---------------------------------------------------------------------------------
+synthesize failed
+    while executing
+"rt::run_synthesis -module $rt::top"
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::run_synthesis -module $rt::top
+    }"
+    ("uplevel" body line 37)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+
+    while executing
+"source -notrace {./.Xil/Vivado-9860-XSHZHEHENGT30/realtime\mult_while.tcl}"
+    invoked from within
+"synth_design -top mult_while -part xc7a35tcpg236-1"
+    (file "mult_while.tcl" line 19)
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 19 12:31:39 2016...

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="15">
+	</WVObjectSize>
+	<wvobject fp_name="app_cmd" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">app_cmd[2:0]</obj_property>
+		<obj_property name="ObjectShortName">app_cmd[2:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_rd_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">app_rd_data[127:0]</obj_property>
+		<obj_property name="ObjectShortName">app_rd_data[127:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_wdf_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">app_wdf_data[127:0]</obj_property>
+		<obj_property name="ObjectShortName">app_wdf_data[127:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_addr" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">app_addr[26:0]</obj_property>
+		<obj_property name="ObjectShortName">app_addr[26:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_wdf_mask" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">app_wdf_mask[15:0]</obj_property>
+		<obj_property name="ObjectShortName">app_wdf_mask[15:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_en" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_en</obj_property>
+		<obj_property name="ObjectShortName">app_en</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_rd_data_end" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_rd_data_end</obj_property>
+		<obj_property name="ObjectShortName">app_rd_data_end</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_rd_data_valid" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_rd_data_valid</obj_property>
+		<obj_property name="ObjectShortName">app_rd_data_valid</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_rdy" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_rdy</obj_property>
+		<obj_property name="ObjectShortName">app_rdy</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_ref_ack" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_ref_ack</obj_property>
+		<obj_property name="ObjectShortName">app_ref_ack</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_sr_active" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_sr_active</obj_property>
+		<obj_property name="ObjectShortName">app_sr_active</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_wdf_end" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_wdf_end</obj_property>
+		<obj_property name="ObjectShortName">app_wdf_end</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_wdf_rdy" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_wdf_rdy</obj_property>
+		<obj_property name="ObjectShortName">app_wdf_rdy</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_wdf_wren" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_wdf_wren</obj_property>
+		<obj_property name="ObjectShortName">app_wdf_wren</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="app_zq_ack" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">app_zq_ack</obj_property>
+		<obj_property name="ObjectShortName">app_zq_ack</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <DashboardHolder activeDashboard="ILA">
+        <Dashboard columnResizable="1" key="ILA" rowResizable="0" title="ILA">
+            <Settings/>
+            <GadgetContainer boxAxis="1" count="2" height="632"
+                layout="JideBoxLayout" vgap="6" width="682">
+                <Gadget height="111" key="Trigger Capture Status" width="682"/>
+                <Gadget height="460" key="Basic Trigger Setup" width="682">
+                    <Probe name="OV7725_SIOC_OBUF"/>
+                    <Probe name="OV7725_SIOD_OBUF"/>
+                </Gadget>
+                <Settings/>
+            </GadgetContainer>
+        </Dashboard>
+    </DashboardHolder>
+</component>

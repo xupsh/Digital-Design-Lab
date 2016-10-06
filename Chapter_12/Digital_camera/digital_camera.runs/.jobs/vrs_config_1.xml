@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="IICctrl_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/IICctrl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="blk_mem_gen_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/blk_mem_gen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_ov7670_ov7725_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/cam_ov7670_ov7725_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7725_regData_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/ov7725_regData_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ram_read_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/ram_read_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vga_0_synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/vga_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="IICctrl_0_synth_1"/>
+		<Parent Id="blk_mem_gen_0_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="cam_ov7670_ov7725_0_synth_1"/>
+		<Parent Id="ov7725_regData_0_synth_1"/>
+		<Parent Id="ram_read_0_synth_1"/>
+		<Parent Id="vga_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/chapter_13/digital_camera.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+	</Run>
+</Runs>
+

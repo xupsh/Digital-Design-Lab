@@ -1,0 +1,12 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.sim/sim_1/synth/func/tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module oled_init
+INFO: [VRFC 10-311] analyzing module oled_top
+INFO: [VRFC 10-311] analyzing module oled_write_data
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.sim/sim_1/synth/func/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.sim/sim_1/synth/func/glbl.v:6]

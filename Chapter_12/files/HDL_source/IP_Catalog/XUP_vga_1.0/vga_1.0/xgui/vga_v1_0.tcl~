@@ -1,0 +1,42 @@
+
+# Additional procs with user specified bodies to compute parameter values.
+proc gen_USERPARAMETER_H_POS_SIZE_ENABLEMENT {HPOS } {expr $HPOS}
+proc gen_HDLPARAMETER_RST_POLARITY_VALUE {RST_POLARITY } {expr { ( $RST_POLARITY eq "ACTIVE_HIGH" ) ? 1 : 0}}
+proc gen_HDLPARAMETER_RESET_POLARITY_VALUE {RESET_POLARITY } {expr { ( $RESET_POLARITY eq "ACTIVE_HIGH" ) ? 1 : 0}}
+proc gen_HDLPARAMETER_TOTAL_PERIOD_VALUE {PULSE_PERIOD RST_PERIOD } {expr {  ( $PULSE_PERIOD > 0 ) ? [expr $PULSE_PERIOD - $RST_PERIOD] : 0 }}
+proc gen_USERPARAMETER_RESET_POLARITY_ENABLEMENT {CLOCK_TYPE } {expr { $CLOCK_TYPE eq "Single_Ended"} }
+proc gen_HDLPARAMETER_CLOCK_PERIOD_VALUE {FREQ_HZ } {expr { 1000000000.0 / $FREQ_HZ }}
+proc gen_USERPARAMETER_INITIAL_RESET_CLOCK_CYCLES_ENABLEMENT {CLOCK_TYPE } {expr { $CLOCK_TYPE eq "Single_Ended"} }
+proc gen_USERPARAMETER_V_POS_SIZE_ENABLEMENT {VPOS } {expr $VPOS}
+
+# Definitional proc to organize widgets for parameters.
+proc init_gui { IPINST } {
+  ipgui::add_param $IPINST -name "Component_Name"
+  #Adding Page
+  set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
+  ipgui::add_param $IPINST -name "TYPE" -parent ${Page_0}
+  ipgui::add_static_text $IPINST -name "Input Clock" -parent ${Page_0} -text {All supported video standards requires 60 Hz refresh rate monitor
+
+VGA - Requires 25 MHz pixel clock
+SVGA - Requires 40 MHz pixel clock
+XVGA - Requires 65 MHz pixel clock
+SXGA - Requires 108 MHz pixel clock}
+
+
+}
+
+proc update_PARAM_VALUE.TYPE { PARAM_VALUE.TYPE } {
+	# Procedure called to update TYPE when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.TYPE { PARAM_VALUE.TYPE } {
+	# Procedure called to validate TYPE
+	return true
+}
+
+
+proc update_MODELPARAM_VALUE.TYPE { MODELPARAM_VALUE.TYPE PARAM_VALUE.TYPE } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.TYPE}] ${MODELPARAM_VALUE.TYPE}
+}
+

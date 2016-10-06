@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_2" LaunchDir="E:/Basys3/OLED/OLED.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_2" LaunchDir="E:/Basys3/OLED/OLED.runs/impl_2" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_2"/>
+	</Run>
+</Runs>
+

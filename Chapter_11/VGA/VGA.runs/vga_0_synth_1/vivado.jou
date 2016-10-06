@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Sep 20 11:42:39 2016
+# Process ID: 2764
+# Log file: C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_11/VGA/VGA.runs/vga_0_synth_1/vga_0.vds
+# Journal file: C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_11/VGA/VGA.runs/vga_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_0.tcl

@@ -1,0 +1,18 @@
+   Compiling(apcc) ../../../../fir_test.c in debug mode
+@I [HLS-10] Running 'c:/Xilinx/Vivado_HLS/2015.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'zhehengt' on host 'xshzhehengt30' (Windows NT_amd64 version 6.1) on Fri Mar 25 10:42:51 +0800 2016
+            in directory 'E:/Basys3/Tcl_Project/FIR_HLS/FIR/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+   Compiling(apcc) ../../../../fir.c in debug mode
+@I [HLS-10] Running 'c:/Xilinx/Vivado_HLS/2015.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'zhehengt' on host 'xshzhehengt30' (Windows NT_amd64 version 6.1) on Fri Mar 25 10:43:06 +0800 2016
+            in directory 'E:/Basys3/Tcl_Project/FIR_HLS/FIR/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+   Generating csim.exe
+Comparing against output data 
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+@I [SIM-1] CSim done with 0 errors.

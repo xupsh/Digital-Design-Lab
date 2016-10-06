@@ -1,0 +1,5 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_8/I2C/I2C.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_8/I2C/I2C.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

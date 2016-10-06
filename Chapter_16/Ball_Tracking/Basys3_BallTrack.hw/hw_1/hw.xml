@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hwsession version="1" minor="1">
+  <device name="xc7a35t_0" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/Ball_Tracking/Ready_for_download/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/Ball_Tracking/Ready_for_download/B3_BallTrack_download.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

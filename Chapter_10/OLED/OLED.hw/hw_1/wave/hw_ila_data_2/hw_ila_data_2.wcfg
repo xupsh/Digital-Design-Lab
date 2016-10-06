@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/zhehengt/Desktop/XUP_drafts_V1.2/program/OLED/OLED.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="7">
+	</WVObjectSize>
+	<wvobject fp_name="cur_st" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">cur_st[2:0]</obj_property>
+		<obj_property name="ObjectShortName">cur_st[2:0]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="write_data_1" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">write_data_1[6:4]</obj_property>
+		<obj_property name="ObjectShortName">write_data_1[6:4]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="write_data_2" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">write_data_2[14:14]</obj_property>
+		<obj_property name="ObjectShortName">write_data_2[14:14]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="write_data_3" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">write_data_3[19:19]</obj_property>
+		<obj_property name="ObjectShortName">write_data_3[19:19]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="write_data_4" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">write_data_4[21:21]</obj_property>
+		<obj_property name="ObjectShortName">write_data_4[21:21]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="write_data_5" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">write_data_5[28:28]</obj_property>
+		<obj_property name="ObjectShortName">write_data_5[28:28]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="write_data" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">write_data[36:36]</obj_property>
+		<obj_property name="ObjectShortName">write_data[36:36]</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

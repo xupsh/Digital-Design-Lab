@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2014.4" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK100</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>clk100</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>Config_Done</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_SIOC</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Move_EN</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_SIOD</spirit:name>
+          <spirit:wire>
+            <spirit:direction>inout</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_D</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_HREF</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>btn_ColorExtract</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>clk100</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_XCLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>pwm_out_x</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>pwm_out_y</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_PCLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_blue</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_green</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_red</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>rst</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>sw_ColorClear</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxn14</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxn15</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxn6</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxn7</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxp14</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxp15</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxp6</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vauxp7</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_hsync</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_vsync</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OV7725_VSYNC</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>IICctrl_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="IICctrl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_IICctrl_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>PWM_gen_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="PWM_gen" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_PWM_gen_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>PWM_gen_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="PWM_gen" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_PWM_gen_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>blk_mem_gen_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="blk_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.2"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_blk_mem_gen_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Memory_Type">Simple_Dual_Port_RAM</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_32bit_Address">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Use_Byte_Write_Enable">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Write_Width_A">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Write_Depth_A">76800</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Operating_Mode_A">NO_CHANGE</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_A">Always_Enabled</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Write_Width_B">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Read_Width_B">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Enable_B">Always_Enabled</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Register_PortB_Output_of_Memory_Primitives">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Port_B_Clock">100</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Port_B_Enable_Rate">100</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="use_bram_block">Stand_Alone</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>cam_ov7670_ov7725_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="cam_ov7670_ov7725" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_cam_ov7670_ov7725_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_clk_wiz_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_USED">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_OUT_CLKS">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">100.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_REQUESTED_OUT_FREQ">25.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_LOCKED">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_RESET">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">130.958</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_JITTER">175.402</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_PHASE_ERROR">98.575</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>colorDetect_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="colorDetect" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_colorDetect_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>debounce_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="debounce" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_debounce_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dilate_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="dilate" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_dilate_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>erode_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="erode" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_erode_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>move_en_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="move_en" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_move_en_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>move_en_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="move_en" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_move_en_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ov7725_regData_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="ov7725_regData" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ov7725_regData_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ram_read_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="ram_read" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ram_read_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>region_cut_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="region_cut" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_region_cut_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rgb2hsv_top_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="rgb2hsv_top" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rgb2hsv_top_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rgb565_rgb888_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="rgb565_rgb888" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rgb565_rgb888_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rgb888_rgb565_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="rgb888_rgb565" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rgb888_rgb565_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>servo_ctrl_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="servo_ctrl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_servo_ctrl_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>vga_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="vga" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_vga_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xadc_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="xadc" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xadc_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>IICctrl_0_I2C_SCLK</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="I2C_SCLK"/>
+        <spirit:externalPortReference spirit:portRef="OV7725_SIOC"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>IICctrl_0_LUT_INDEX</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="LUT_INDEX"/>
+        <spirit:internalPortReference spirit:componentRef="ov7725_regData_0" spirit:portRef="LUT_INDEX"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Move_EN_2</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Move_EN"/>
+        <spirit:internalPortReference spirit:componentRef="move_en_0" spirit:portRef="Move_EN"/>
+        <spirit:internalPortReference spirit:componentRef="move_en_1" spirit:portRef="Move_EN"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Net</spirit:name>
+        <spirit:externalPortReference spirit:portRef="OV7725_SIOD"/>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="I2C_SDAT"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>OV7725_D_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="OV7725_D"/>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="d"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>OV7725_HREF_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="OV7725_HREF"/>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="href"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>PWM_gen_0_PWM</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_0" spirit:portRef="PWM"/>
+        <spirit:internalPortReference spirit:componentRef="move_en_0" spirit:portRef="pwm_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>PWM_gen_1_PWM</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_1" spirit:portRef="PWM"/>
+        <spirit:internalPortReference spirit:componentRef="move_en_1" spirit:portRef="pwm_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>blk_mem_gen_0_doutb</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="doutb"/>
+        <spirit:internalPortReference spirit:componentRef="rgb565_rgb888_0" spirit:portRef="rgb565"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>btn_ColorExtract_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="btn_ColorExtract"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="btn_ColorExtract"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cam_ov7670_ov7725_0_addr</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="addr"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="addra"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cam_ov7670_ov7725_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="dina"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cam_ov7670_ov7725_0_wclk</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="wclk"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>cam_ov7670_ov7725_0_we</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="we"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="wea"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_in1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk100"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_clk_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_0" spirit:portRef="clk_pwm"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_1" spirit:portRef="clk_pwm"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="clk100"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_clk_out2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out2"/>
+        <spirit:externalPortReference spirit:portRef="OV7725_XCLK"/>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="iCLK"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clkb"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="PClk"/>
+        <spirit:internalPortReference spirit:componentRef="debounce_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="dilate_0" spirit:portRef="PCLK"/>
+        <spirit:internalPortReference spirit:componentRef="erode_0" spirit:portRef="PCLK"/>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="rgb2hsv_top_0" spirit:portRef="pclk"/>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_pclk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>colorDetect_0_Binary_PreProcess</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="Binary_PreProcess"/>
+        <spirit:internalPortReference spirit:componentRef="erode_0" spirit:portRef="pix_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>colorDetect_0_RGB24_dis</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="RGB24_dis"/>
+        <spirit:internalPortReference spirit:componentRef="rgb888_rgb565_0" spirit:portRef="rgb888"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>colorDetect_0_center_h</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="center_h"/>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="x"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>colorDetect_0_center_v</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="center_v"/>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="y"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>debounce_0_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="debounce_0" spirit:portRef="o"/>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_0" spirit:portRef="clr_pwm"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_1" spirit:portRef="clr_pwm"/>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_rst"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="rst"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dilate_0_pix_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dilate_0" spirit:portRef="pix_o"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="Binary_PostProcess"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>erode_0_pix_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="erode_0" spirit:portRef="pix_o"/>
+        <spirit:internalPortReference spirit:componentRef="dilate_0" spirit:portRef="pix_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>move_en_0_pwm_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="move_en_0" spirit:portRef="pwm_o"/>
+        <spirit:externalPortReference spirit:portRef="pwm_out_x"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>move_en_1_pwm_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="move_en_1" spirit:portRef="pwm_o"/>
+        <spirit:externalPortReference spirit:portRef="pwm_out_y"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ov7725_regData_0_LUT_DATA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ov7725_regData_0" spirit:portRef="LUT_DATA"/>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="LUT_DATA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ov7725_regData_0_Slave_Addr</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ov7725_regData_0" spirit:portRef="Slave_Addr"/>
+        <spirit:internalPortReference spirit:componentRef="IICctrl_0" spirit:portRef="Slave_Addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pclk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="OV7725_PCLK"/>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="pclk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ram_read_0_address</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="address"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="addrb"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ram_read_0_vga_blue</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="vga_blue"/>
+        <spirit:externalPortReference spirit:portRef="vga_blue"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ram_read_0_vga_green</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="vga_green"/>
+        <spirit:externalPortReference spirit:portRef="vga_green"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ram_read_0_vga_red</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="vga_red"/>
+        <spirit:externalPortReference spirit:portRef="vga_red"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb2hsv_top_0_HSV24</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb2hsv_top_0" spirit:portRef="HSV24"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="HSV24"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb565_rgb888_0_rgb888</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb565_rgb888_0" spirit:portRef="rgb888"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="RGB24"/>
+        <spirit:internalPortReference spirit:componentRef="rgb2hsv_top_0" spirit:portRef="RGB24"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb888_rgb565_0_rgb565</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb888_rgb565_0" spirit:portRef="rgb565"/>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rst_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="debounce_0" spirit:portRef="i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>servo_ctrl_0_duty_x</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="duty_x"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_0" spirit:portRef="duty"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>servo_ctrl_0_duty_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="duty_y"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_gen_1" spirit:portRef="duty"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sw_ColorClear_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sw_ColorClear"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="sw_ColorClear"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxn14_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxn14"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxn14"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxn15_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxn15"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxn15"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxn6_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxn6"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxn6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxn7_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxn7"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxn7"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxp14_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxp14"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxp14"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxp15_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxp15"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxp15"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxp6_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxp6"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxp6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vauxp7_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="vauxp7"/>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="vauxp7"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_Hcnt_signal</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="region_cut_0" spirit:portRef="valid_h_cnt"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="VtcHCnt"/>
+        <spirit:internalPortReference spirit:componentRef="dilate_0" spirit:portRef="VtcHCnt"/>
+        <spirit:internalPortReference spirit:componentRef="erode_0" spirit:portRef="VtcHCnt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_Vcnt_signal</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="region_cut_0" spirit:portRef="valid_v_cnt"/>
+        <spirit:internalPortReference spirit:componentRef="colorDetect_0" spirit:portRef="VtcVCnt"/>
+        <spirit:internalPortReference spirit:componentRef="dilate_0" spirit:portRef="VtcVCnt"/>
+        <spirit:internalPortReference spirit:componentRef="erode_0" spirit:portRef="VtcVCnt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_vga_h_cnt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_h_cnt"/>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="vga_h_cnt"/>
+        <spirit:internalPortReference spirit:componentRef="region_cut_0" spirit:portRef="vga_h_cnt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_vga_hsync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_hsync"/>
+        <spirit:externalPortReference spirit:portRef="vga_hsync"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_vga_v_cnt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_v_cnt"/>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="vga_v_cnt"/>
+        <spirit:internalPortReference spirit:componentRef="region_cut_0" spirit:portRef="vga_v_cnt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_vga_valid</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_valid"/>
+        <spirit:internalPortReference spirit:componentRef="ram_read_0" spirit:portRef="valid"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vga_0_vga_vsync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="vga_0" spirit:portRef="vga_vsync"/>
+        <spirit:externalPortReference spirit:portRef="vga_vsync"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>vsync_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="OV7725_VSYNC"/>
+        <spirit:internalPortReference spirit:componentRef="cam_ov7670_ov7725_0" spirit:portRef="vsync"/>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="vsync_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xadc_0_aux_out_6</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="aux_out_6"/>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="ad_data_y"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xadc_0_aux_out_7</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xadc_0" spirit:portRef="aux_out_7"/>
+        <spirit:internalPortReference spirit:componentRef="servo_ctrl_0" spirit:portRef="ad_data_x"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="debounce_0" spirit:portRef="clr"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

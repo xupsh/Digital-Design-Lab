@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2014.4" bd:top="MIPS_CPU" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>MIPS_CPU</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="MIPS_CPU_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>inclk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>key</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>led</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>MIPS_CPU_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>ALU32_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="ALU32" spirit:vendor="dtysky" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_ALU32_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>CONTROL_UNIT_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="CONTROL_UNIT" spirit:vendor="dtysky" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_CONTROL_UNIT_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>DATAPATH_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="DATAPATH" spirit:vendor="dtysky" spirit:version="1.2"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_DATAPATH_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>DATA_MEM_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="DATA_MEM" spirit:vendor="dtysky" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_DATA_MEM_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>KEY2INST_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="KEY2INST" spirit:vendor="dtysky" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_KEY2INST_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>REGFILE_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="REGFILE" spirit:vendor="dtysky" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_REGFILE_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>SHOW_ON_LED_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="SHOW_ON_LED" spirit:vendor="dtysky" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_SHOW_ON_LED_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="5.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">MIPS_CPU_clk_wiz_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>ALU32_0_r</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU32_0" spirit:portRef="r"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="alu_r"/>
+        <spirit:internalPortReference spirit:componentRef="SHOW_ON_LED_0" spirit:portRef="alu_r"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ALU32_0_z</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ALU32_0" spirit:portRef="z"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="alu_z"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_aluc</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="aluc"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_aluc"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_aluimm</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="aluimm"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_aluimm"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_jal</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="jal"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_jal"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_m2reg</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="m2reg"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_m2reg"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_pcsource</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="pcsource"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_pcsource"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_regrt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="regrt"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_regrt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_sext</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="sext"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_sext"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_shfit</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="shfit"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_shfit"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_wmem</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="wmem"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_wmem"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CONTROL_UNIT_0_wreg</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="wreg"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_wreg"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_alu_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="alu_a"/>
+        <spirit:internalPortReference spirit:componentRef="ALU32_0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_alu_aluc</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="alu_aluc"/>
+        <spirit:internalPortReference spirit:componentRef="ALU32_0" spirit:portRef="aluc"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_alu_b</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="alu_b"/>
+        <spirit:internalPortReference spirit:componentRef="ALU32_0" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_con_func</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_func"/>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="func"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_con_op</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_op"/>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="op"/>
+        <spirit:internalPortReference spirit:componentRef="SHOW_ON_LED_0" spirit:portRef="inst_op"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_con_z</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="con_z"/>
+        <spirit:internalPortReference spirit:componentRef="CONTROL_UNIT_0" spirit:portRef="z"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_data_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="data_a"/>
+        <spirit:internalPortReference spirit:componentRef="DATA_MEM_0" spirit:portRef="addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_data_di</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="data_di"/>
+        <spirit:internalPortReference spirit:componentRef="DATA_MEM_0" spirit:portRef="data_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_data_we</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="data_we"/>
+        <spirit:internalPortReference spirit:componentRef="DATA_MEM_0" spirit:portRef="we"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_inst_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="inst_a"/>
+        <spirit:internalPortReference spirit:componentRef="KEY2INST_0" spirit:portRef="inst_a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_reg_d</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_d"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="d"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_reg_rna</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_rna"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="rna"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_reg_rnb</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_rnb"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="rnb"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_reg_we</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_we"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="we"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATAPATH_0_reg_wn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_wn"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="wn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DATA_MEM_0_data_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DATA_MEM_0" spirit:portRef="data_out"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="data_do"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>KEY2INST_0_clrn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="KEY2INST_0" spirit:portRef="clrn"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="clrn"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="clrn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>KEY2INST_0_inst_do</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="KEY2INST_0" spirit:portRef="inst_do"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="inst_do"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>REGFILE_0_qa</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="qa"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_qa"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>REGFILE_0_qb</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="qb"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="reg_qb"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SHOW_ON_LED_0_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="SHOW_ON_LED_0" spirit:portRef="led"/>
+        <spirit:externalPortReference spirit:portRef="led"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>button_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="key"/>
+        <spirit:internalPortReference spirit:componentRef="KEY2INST_0" spirit:portRef="button"/>
+        <spirit:internalPortReference spirit:componentRef="SHOW_ON_LED_0" spirit:portRef="button"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_clk_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
+        <spirit:internalPortReference spirit:componentRef="DATAPATH_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="DATA_MEM_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="KEY2INST_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="REGFILE_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="SHOW_ON_LED_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>inclk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="inclk"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>
