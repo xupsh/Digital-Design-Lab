@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Jan 20 11:30:45 2017
+# Process ID: 9084
+# Current directory: E:/Github/xupsh/Digital_Design_lab/Chapter_3/example
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11064 E:\Github\xupsh\Digital_Design_lab\Chapter_3\example\example.xpr
+# Log file: E:/Github/xupsh/Digital_Design_lab/Chapter_3/example/vivado.log
+# Journal file: E:/Github/xupsh/Digital_Design_lab/Chapter_3/example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 20 11:31:10 2017...

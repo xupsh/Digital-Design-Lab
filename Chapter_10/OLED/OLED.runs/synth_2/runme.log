@@ -614,3 +614,620 @@ synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak 
 # catch { report_utilization -file oled_top_utilization_synth.rpt -pb oled_top_utilization_synth.pb }
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 566.996 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 17:45:44 2016...
+
+*** Running vivado
+    with args -log oled_top.vds -m64 -mode batch -messageDb vivado.pb -source oled_top.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source oled_top.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.cache/wt [current_project]
+# set_property parent.project_path E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib {
+#   E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v
+#   E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v
+#   E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/spi_master.v
+#   E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled.v
+#   E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v
+# }
+# read_xdc E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/constrs_1/new/PIN.xdc
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/constrs_1/new/PIN.xdc]
+# catch { write_hwdef -file oled_top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top oled_top -part xc7a35tcpg236-1
+Command: synth_design -top oled_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.11' and will expire in -36 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 239.648 ; gain = 80.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'oled_top' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:23]
+	Parameter X bound to: 48'b000000000110001100010100000010000001010001100011 
+	Parameter I bound to: 48'b000000000000000001000001011111110100000100000000 
+	Parameter L bound to: 48'b000000000111111101000000010000000100000001000000 
+	Parameter N bound to: 48'b000000000111111100000100000010000001000001111111 
+INFO: [Synth 8-638] synthesizing module 'spi_master' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/spi_master.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter CS_L bound to: 1 - type: integer 
+	Parameter DATA bound to: 2 - type: integer 
+	Parameter FINISH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (1#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/spi_master.v:1]
+WARNING: [Synth 8-350] instance 'spi_master' of module 'spi_master' requires 12 connections, but only 11 given [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:65]
+INFO: [Synth 8-638] synthesizing module 'oled_init' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled.v:23]
+INFO: [Synth 8-256] done synthesizing module 'oled_init' (2#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled.v:23]
+INFO: [Synth 8-638] synthesizing module 'oled_write_data' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v:96]
+INFO: [Synth 8-256] done synthesizing module 'oled_write_data' (3#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v:23]
+INFO: [Synth 8-638] synthesizing module 'oled_clear' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v:93]
+INFO: [Synth 8-256] done synthesizing module 'oled_clear' (4#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v:23]
+INFO: [Synth 8-256] done synthesizing module 'oled_top' (5#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 273.789 ; gain = 114.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin spi_master:mosi to constant 0 [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 273.789 ; gain = 114.156
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/constrs_1/new/PIN.xdc]
+Finished Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/constrs_1/new/PIN.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/constrs_1/new/PIN.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/oled_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/oled_top_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 567.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'spi_master'
+ROM "delay_count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "sck_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "nxt_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "spi_send_done" won't be mapped to RAM because it is too sparse.
+ROM "count" won't be mapped to RAM because it is too sparse.
+ROM "miso" won't be mapped to RAM because it is too sparse.
+ROM "nxt_st" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'oled_init'
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM "init_done" won't be mapped to RAM because it is too sparse.
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'oled_write_data'
+ROM "dc" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "write_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "spi_send" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "spi_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "x_tmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "y_tmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "write_data_tmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "nxt_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'oled_clear'
+ROM "y_tmp" won't be mapped to RAM because it is too sparse.
+ROM "dc" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "clear_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "spi_send" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "spi_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "x_tmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "nxt_st" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "clear_start" won't be mapped to RAM because it is too sparse.
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM "set_pos_x" won't be mapped to RAM because it is too sparse.
+ROM "write_data" won't be mapped to RAM because it is too sparse.
+ROM "write_start" won't be mapped to RAM because it is too sparse.
+ROM "spi_send" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'one-hot' in module 'spi_master'
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'sequential' in module 'oled_init'
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'one-hot' in module 'oled_write_data'
+WARNING: [Synth 8-327] inferring latch for variable 'spi_send_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'spi_data_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_write_data.v:76]
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'sequential' in module 'oled_clear'
+WARNING: [Synth 8-327] inferring latch for variable 'spi_send_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'spi_data_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_clear.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'spi_send_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'write_data_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:118]
+WARNING: [Synth 8-327] inferring latch for variable 'write_start_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'set_pos_x_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'set_pos_y_reg' [E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.srcs/sources_1/new/oled_top.v:120]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     48 Bit        Muxes := 2     
+	   2 Input     39 Bit        Muxes := 2     
+	   7 Input     39 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	  12 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	  12 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module oled_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 2     
+	   7 Input     39 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module oled_init 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	  12 Input      6 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module oled_write_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     48 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module oled_clear 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "spi_master/delay_count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "spi_master/sck_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "oled_clear/y_tmp" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 567.141 ; gain = 407.508
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pos_y_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pos_y_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pos_x_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\set_pos_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\write_data_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\oled_clear/spi_data_reg[5] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[47] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[46] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[45] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[44] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[43] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[42] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[41] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[40] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[39] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[38] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[37] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[36] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[35] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[34] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[33] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[32] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[31] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[30] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[29] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[28] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[27] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[26] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[25] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[24] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[23] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[22] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[21] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[20] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[19] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[18] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[17] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[16] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[15] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[14] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[13] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[12] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[11] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[10] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[9] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[8] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[7] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[6] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[5] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[4] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[3] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[2] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[1] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\write_data_reg[0] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[7] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[6] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[5] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[4] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[3] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[2] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[1] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_x_reg[0] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[7] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[6] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[5] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[4] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[3] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[2] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[1] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\set_pos_y_reg[0] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[7] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[6] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[5] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[4] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[3] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[2] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/y_tmp_reg[0] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[47] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[41] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[39] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[33] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[31] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[25] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[23] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[17] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[15] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[9] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[7] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[3] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[2] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[1] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\oled_write_data/write_data_tmp_reg[0] ) is unused and will be removed from module oled_top.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cur_st_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (\cur_st_reg[5] ) is unused and will be removed from module oled_top.
+WARNING: [Synth 8-3332] Sequential element (\cur_st_reg[4] ) is unused and will be removed from module oled_top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 567.141 ; gain = 407.508
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    16|
+|3     |INV    |     1|
+|4     |LUT1   |    64|
+|5     |LUT2   |    34|
+|6     |LUT3   |    36|
+|7     |LUT4   |    30|
+|8     |LUT5   |    42|
+|9     |LUT6   |    75|
+|10    |FDCE   |    76|
+|11    |FDPE   |     1|
+|12    |FDRE   |    83|
+|13    |FDSE   |     7|
+|14    |LD     |     1|
+|15    |LDC    |    18|
+|16    |IBUF   |     1|
+|17    |OBUF   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------+------+
+|      |Instance          |Module          |Cells |
++------+------------------+----------------+------+
+|1     |top               |                |   492|
+|2     |  oled_clear      |oled_clear      |    76|
+|3     |  oled_init       |oled_init       |    20|
+|4     |  oled_write_data |oled_write_data |   151|
+|5     |  spi_master      |spi_master      |   124|
++------+------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 98 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 567.141 ; gain = 88.453
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 567.141 ; gain = 407.508
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 9 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 1 instances
+  LDC => LDCE: 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 567.141 ; gain = 381.969
+# write_checkpoint -noxdef oled_top.dcp
+# catch { report_utilization -file oled_top_utilization_synth.rpt -pb oled_top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 567.141 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 05 16:47:12 2017...

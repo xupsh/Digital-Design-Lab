@@ -1,0 +1,14 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port GND -pg 1 -y 20 -defaultsOSRD
+preplace port clr -pg 1 -y 60 -defaultsOSRD
+preplace port dp -pg 1 -y 40 -defaultsOSRD
+preplace port clk -pg 1 -y 40 -defaultsOSRD
+preplace portBus an -pg 1 -y 20 -defaultsOSRD
+preplace portBus seg -pg 1 -y 60 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 130 -defaultsOSRD
+preplace inst clk_div_1 -pg 1 -lvl 1 -y 40 -defaultsOSRD
+levelinfo -pg 1 60 170 280
+",
+}

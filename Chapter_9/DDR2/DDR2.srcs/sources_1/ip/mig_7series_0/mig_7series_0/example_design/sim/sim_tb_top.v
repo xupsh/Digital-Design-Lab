@@ -479,14 +479,13 @@ module sim_tb_top;
      .ddr2_odt             (ddr2_odt_fpga),
     
      
-    // .sys_clk_i            (sys_clk_i),
+     .sys_clk_i            (sys_clk_i),
     
-    // .clk_ref_i            (clk_ref_i),
+     .clk_ref_i            (clk_ref_i),
     
       .init_calib_complete (init_calib_complete),
-    //  .tg_compare_error    (tg_compare_error),
-      .sys_rst             (sys_rst),
-      . clk_in  (sys_clk_i)
+      .tg_compare_error    (tg_compare_error),
+      .sys_rst             (sys_rst)
      );
 
   //**************************************************************************//

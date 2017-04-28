@@ -9,13 +9,14 @@ SET_PREFERENCE package csg324
 SET_PREFERENCE verilogsim true
 SET_PREFERENCE vhdlsim false
 SET_PREFERENCE designentry Verilog
-SET_PREFERENCE outputdirectory e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/ip/mig_7series_0/_tmp/
-SET_PREFERENCE subworkingdirectory e:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/ip/mig_7series_0/_tmp/
+SET_PREFERENCE outputdirectory e:/Github/xupsh/Digital_Design_lab/Chapter_9/DDR2/DDR2.srcs/sources_1/ip/mig_7series_0/_tmp/
+SET_PREFERENCE subworkingdirectory e:/Github/xupsh/Digital_Design_lab/Chapter_9/DDR2/DDR2.srcs/sources_1/ip/mig_7series_0/_tmp/
 SET_PREFERENCE flowvendor Other
 SET_PREFERENCE tool vivado
-SET_PREFERENCE compnamestatus 0
 SET_PARAMETER component_name mig_7series_0
-SET_PARAMETER xml_input_file E:/Basys3/DDR2_test/tcl_pro/prj/DDR2.srcs/sources_1/ip/mig_7series_0/mig_a.prj
+SET_PREFERENCE compnamestatus 1
+SET_PARAMETER component_name mig_7series_0
+SET_PARAMETER xml_input_file E:/Github/xupsh/Digital_Design_lab/Chapter_9/DDR2/DDR2.srcs/sources_1/ip/mig_7series_0/mig_a.prj
 SET_PARAMETER data_dir_path c:/Xilinx/Vivado/2014.4/data/ip/xilinx/mig_7series_v2_3
 SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
 SET_CORE_VERSION 2.3

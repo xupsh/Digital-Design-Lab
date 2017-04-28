@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Sep 20 13:59:54 2016">
+<application name="pa" timeStamp="Fri Jan 20 15:35:56 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="31399b1f1a4e421dba3343eb48f39ad0" type="ProjectID"/>
 <property name="ProjectIteration" value="2" type="ProjectIteration"/>
@@ -17,13 +17,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="CloseProject" value="-1" type="JavaHandler"/>
+<property name="CloseProject" value="-2" type="JavaHandler"/>
 <property name="OpenProject" value="0" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="258" type="GuiMode"/>
+<property name="GuiMode" value="338" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="140" type="TclMode"/>
+<property name="TclMode" value="198" type="TclMode"/>
 </item>
 </section>
 </application>

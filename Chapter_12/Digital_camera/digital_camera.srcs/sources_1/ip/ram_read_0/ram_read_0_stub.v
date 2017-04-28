@@ -1,10 +1,10 @@
 // Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
-// Date        : Tue Sep 20 12:02:22 2016
+// Date        : Mon Jan 09 14:41:32 2017
 // Host        : XSHZHEHENGT30 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/zhehengt/Desktop/Digital_Design_Lab/Chapter_12/Digital_camera/digital_camera.srcs/sources_1/ip/ram_read_0/ram_read_0_stub.v
+//               E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.srcs/sources_1/ip/ram_read_0/ram_read_0_stub.v
 // Design      : ram_read_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

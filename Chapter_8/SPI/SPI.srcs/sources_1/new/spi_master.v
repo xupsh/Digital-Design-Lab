@@ -32,7 +32,7 @@ module spi_master
 	input spi_send,
 	input[7:0] spi_data_out,
 	output reg spi_send_done,
-	input clk
+	input clk          //100MHz clk
 );
 
    reg [3:0]count;
@@ -55,9 +55,10 @@ module spi_master
    always@(posedge clk)
    if(~rst)
       sck_reg<=0;
-   else if(delay_count==50)
+   else if(delay_count==49)
       sck_reg<=!sck_reg;
-  //产生SCK
+
+//Generate SCK 
 	always@(*)
 	if(cs) sck=1;
 	else if(cur_st==FINISH) sck=1;
@@ -80,14 +81,16 @@ module spi_master
    	  default:nxt_st=IDLE;
    	endcase
    end
-   //产生发送结束标志
+ 
+ //Generate end flag of sending 
    always@(*)
    if(~rst)
       spi_send_done=0;
    else if(cur_st==FINISH)
       spi_send_done=1;
    else spi_send_done=0;
-//产生CS
+
+//Generate CS 
    always@(posedge sck_reg)
    	if(~rst) cs<=1;
    	else if(cur_st==CS_L) cs<=0;
@@ -102,7 +105,8 @@ module spi_master
    		count<=count+1;
    	else if(cur_st==IDLE | cur_st==FINISH)
    		count<=0;
-   //MISO数据
+  
+   //MISO 
    always@(negedge sck_reg or negedge rst)
    	if(~rst)
    		miso<=0;	

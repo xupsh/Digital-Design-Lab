@@ -1,0 +1,336 @@
+
+*** Running vivado
+    with args -log design_1.vds -m64 -mode batch -messageDb vivado.pb -source design_1.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source design_1.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.cache/wt [current_project]
+# set_property parent.project_path E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog [current_project]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/IICctrl_0_synth_1/IICctrl_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/IICctrl_0_synth_1/IICctrl_0.dcp]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/cam_ov7670_ov7725_0_synth_1/cam_ov7670_ov7725_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/cam_ov7670_ov7725_0_synth_1/cam_ov7670_ov7725_0.dcp]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/ov7725_regData_0_synth_1/ov7725_regData_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/ov7725_regData_0_synth_1/ov7725_regData_0.dcp]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/ram_read_0_synth_1/ram_read_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/ram_read_0_synth_1/ram_read_0.dcp]
+# add_files -quiet E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/vga_0_synth_1/vga_0.dcp
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/vga_0_synth_1/vga_0.dcp]
+# read_verilog -library xil_defaultlib E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/design_1.v
+# read_xdc E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/Constraint/cam_bram_vga.xdc
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/Constraint/cam_bram_vga.xdc]
+# catch { write_hwdef -file design_1.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top design_1 -part xc7a35tcpg236-1
+Command: synth_design -top design_1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.11' and will expire in -40 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 239.250 ; gain = 80.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/design_1.v:12]
+INFO: [Synth 8-638] synthesizing module 'IICctrl_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/IICctrl_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'IICctrl_0' (1#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/IICctrl_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'cam_ov7670_ov7725_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/cam_ov7670_ov7725_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'cam_ov7670_ov7725_0' (3#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/cam_ov7670_ov7725_0_stub.v:7]
+WARNING: [Synth 8-350] instance 'design_1_cam_ov7670_ov7725_0_0' of module 'cam_ov7670_ov7725_0' requires 10 connections, but only 8 given [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/design_1.v:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (4#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ov7725_regData_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/ov7725_regData_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ov7725_regData_0' (5#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/ov7725_regData_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'ram_read_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/ram_read_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ram_read_0' (6#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/ram_read_0_stub.v:7]
+WARNING: [Synth 8-689] width (11) of port connection 'vga_h_cnt' does not match port width (12) of module 'ram_read_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/design_1.v:121]
+WARNING: [Synth 8-689] width (10) of port connection 'vga_v_cnt' does not match port width (11) of module 'ram_read_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/design_1.v:123]
+INFO: [Synth 8-638] synthesizing module 'vga_0' [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/vga_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'vga_0' (7#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/realtime/vga_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (8#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/HDL_source/design_1.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 273.406 ; gain = 114.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 273.406 ; gain = 114.371
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/dcp_3/clk_wiz_0_in_context.xdc] for cell 'design_1_clk_wiz_0_0'
+Finished Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/dcp_3/clk_wiz_0_in_context.xdc] for cell 'design_1_clk_wiz_0_0'
+Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/Constraint/cam_bram_vga.xdc]
+Finished Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/Constraint/cam_bram_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/files/Constraint/cam_bram_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 506.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_12/Digital_camera/digital_camera.runs/synth_1/.Xil/Vivado-14256-XSHZHEHENGT30/dcp_3/clk_wiz_0_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module design_1 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 506.395 ; gain = 347.359
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 527.738 ; gain = 368.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 527.738 ; gain = 368.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 537.051 ; gain = 378.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 537.051 ; gain = 378.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 537.051 ; gain = 378.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 537.051 ; gain = 378.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |IICctrl_0           |         1|
+|2     |blk_mem_gen_0       |         1|
+|3     |cam_ov7670_ov7725_0 |         1|
+|4     |clk_wiz_0           |         1|
+|5     |ov7725_regData_0    |         1|
+|6     |ram_read_0          |         1|
+|7     |vga_0               |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |IICctrl_0           |     1|
+|2     |blk_mem_gen_0       |     1|
+|3     |cam_ov7670_ov7725_0 |     1|
+|4     |clk_wiz_0           |     1|
+|5     |ov7725_regData_0    |     1|
+|6     |ram_read_0          |     1|
+|7     |vga_0               |     1|
+|8     |IBUF                |    12|
+|9     |OBUF                |    16|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   189|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 537.051 ; gain = 378.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 537.051 ; gain = 110.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 537.051 ; gain = 378.016
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 540.219 ; gain = 348.953
+# write_checkpoint -noxdef design_1.dcp
+# catch { report_utilization -file design_1_utilization_synth.rpt -pb design_1_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 540.219 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 09 16:15:23 2017...
