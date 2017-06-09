@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun May 28 20:57:23 2017
+# Process ID: 13248
+# Log file: E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.runs/synth_2/oled_top.vds
+# Journal file: E:/Github/xupsh/Digital_Design_lab/Chapter_10/OLED/OLED.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source oled_top.tcl

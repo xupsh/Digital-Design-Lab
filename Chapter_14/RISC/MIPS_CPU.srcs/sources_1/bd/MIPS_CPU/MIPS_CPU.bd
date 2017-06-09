@@ -22,9 +22,13 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>inclk</spirit:name>
+          <spirit:name>led</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -38,13 +42,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>led</spirit:name>
+          <spirit:name>inclk</spirit:name>
           <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>15</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
+            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>

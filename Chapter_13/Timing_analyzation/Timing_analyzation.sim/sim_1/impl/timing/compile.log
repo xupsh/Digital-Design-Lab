@@ -1,0 +1,9 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Github/xupsh/Digital_Design_lab/Chapter_13/Timing_analyzation/Timing_analyzation.sim/sim_1/impl/timing/tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing_analyze
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Github/xupsh/Digital_Design_lab/Chapter_13/Timing_analyzation/Timing_analyzation.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Github/xupsh/Digital_Design_lab/Chapter_13/Timing_analyzation/Timing_analyzation.sim/sim_1/impl/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Timing_analyzation/Timing_analyzation.sim/sim_1/impl/timing/glbl.v:6]

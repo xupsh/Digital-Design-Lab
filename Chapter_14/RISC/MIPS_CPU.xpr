@@ -12,7 +12,7 @@
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../IPCatalog"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/IPCatalog"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -24,17 +24,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
         <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_clk_wiz_0_0/MIPS_CPU_clk_wiz_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="hw_handoff/MIPS_CPU_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_SHOW_ON_LED_0_0/MIPS_CPU_SHOW_ON_LED_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="hw_handoff/MIPS_CPU.hwh"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_REGFILE_0_0/MIPS_CPU_REGFILE_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_ALU32_0_0/MIPS_CPU_ALU32_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_KEY2INST_0_0/MIPS_CPU_KEY2INST_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_DATA_MEM_0_0/MIPS_CPU_DATA_MEM_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_CONTROL_UNIT_0_0/MIPS_CPU_CONTROL_UNIT_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_DATAPATH_0_0/MIPS_CPU_DATAPATH_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="MIPS_CPU_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="hdl/MIPS_CPU.v"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_KEY2INST_0_0/MIPS_CPU_KEY2INST_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_REGFILE_0_0/MIPS_CPU_REGFILE_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_DATA_MEM_0_0/MIPS_CPU_DATA_MEM_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_ALU32_0_0/MIPS_CPU_ALU32_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_DATAPATH_0_0/MIPS_CPU_DATAPATH_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="ip/MIPS_CPU_CONTROL_UNIT_0_0/MIPS_CPU_CONTROL_UNIT_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="hw_handoff/MIPS_CPU.hwh"/>
+        <CompFileExtendedInfo CompFileName="MIPS_CPU.bd" FileRelPathName="hw_handoff/MIPS_CPU_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/MIPS_CPU_wrapper.v">
         <FileInfo>
