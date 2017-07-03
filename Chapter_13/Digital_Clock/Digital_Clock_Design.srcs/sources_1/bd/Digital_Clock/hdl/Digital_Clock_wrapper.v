@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
-//Date        : Sun May 28 20:59:23 2017
+//Date        : Thu Jun 29 13:28:49 2017
 //Host        : XSHZHEHENGT30 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target Digital_Clock_wrapper.bd
 //Design      : Digital_Clock_wrapper

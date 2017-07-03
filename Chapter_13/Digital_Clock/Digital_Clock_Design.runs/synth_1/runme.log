@@ -1068,3 +1068,538 @@ synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak 
 # catch { report_utilization -file Digital_Clock_wrapper_utilization_synth.rpt -pb Digital_Clock_wrapper_utilization_synth.pb }
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 561.039 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Sun May 28 20:59:52 2017...
+
+*** Running vivado
+    with args -log Digital_Clock_wrapper.vds -m64 -mode batch -messageDb vivado.pb -source Digital_Clock_wrapper.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source Digital_Clock_wrapper.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.cache/wt [current_project]
+# set_property parent.project_path E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/IP_Catalog [current_project]
+# add_files E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/Digital_Clock.bd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/IP_Catalog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+# set_property used_in_implementation false [get_files -all e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0_board.xdc]
+# set_property used_in_implementation false [get_files -all e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.xdc]
+# set_property used_in_implementation false [get_files -all e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0_ooc.xdc]
+# set_property used_in_implementation false [get_files -all E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/Digital_Clock_ooc.xdc]
+# set_property is_locked true [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/Digital_Clock.bd]
+# read_verilog -library xil_defaultlib E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/imports/hdl/Digital_Clock_wrapper.v
+# read_xdc E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/constrs_1/imports/Constraint/Digital_Clock.xdc
+# set_property used_in_implementation false [get_files E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/constrs_1/imports/Constraint/Digital_Clock.xdc]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file Digital_Clock_wrapper.hwdef }
+# synth_design -top Digital_Clock_wrapper -part xc7a35tcpg236-1
+Command: synth_design -top Digital_Clock_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '8888.12' and will expire in -17346 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 242.859 ; gain = 83.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_wrapper' [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/imports/hdl/Digital_Clock_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock' [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/hdl/Digital_Clock.v:12]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_clk_div_1_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_div_1_0/synth/Digital_Clock_clk_div_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/clk_div_v1_0/9423c250/clk_div.v:23]
+	Parameter N bound to: 99999999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/clk_div_v1_0/9423c250/clk_div.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_clk_div_1_0' (2#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_div_1_0/synth/Digital_Clock_clk_div_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_clk_wiz_0_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_clk_wiz_0_0_clk_wiz' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10250]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (3#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10250]
+INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:26053]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (4#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:26053]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (5#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_clk_wiz_0_0_clk_wiz' (6#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_clk_wiz_0_0' (7#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_decimal_counter_0_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_0_0/synth/Digital_Clock_decimal_counter_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'decimal_counter' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/decimal_counter_v1_0/3750c69a/decimal_counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decimal_counter' (8#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/decimal_counter_v1_0/3750c69a/decimal_counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_decimal_counter_0_0' (9#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_0_0/synth/Digital_Clock_decimal_counter_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_decimal_counter_1_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_1_0/synth/Digital_Clock_decimal_counter_1_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_decimal_counter_1_0' (10#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_1_0/synth/Digital_Clock_decimal_counter_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_decimal_counter_2_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_2_0/synth/Digital_Clock_decimal_counter_2_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_decimal_counter_2_0' (11#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_2_0/synth/Digital_Clock_decimal_counter_2_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_decimal_counter_3_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_3_0/synth/Digital_Clock_decimal_counter_3_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_decimal_counter_3_0' (12#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_decimal_counter_3_0/synth/Digital_Clock_decimal_counter_3_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_four_2_input_and_gate_0_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_four_2_input_and_gate_0_0/synth/Digital_Clock_four_2_input_and_gate_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'four_2_input_and_gate' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/four_2_input_and_gate_v1_0/ee0e8530/four_2_input_and_gate.v:23]
+	Parameter Delay bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'four_2_input_and_gate' (13#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/four_2_input_and_gate_v1_0/ee0e8530/four_2_input_and_gate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_four_2_input_and_gate_0_0' (14#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_four_2_input_and_gate_0_0/synth/Digital_Clock_four_2_input_and_gate_0_0.v:57]
+WARNING: [Synth 8-350] instance 'four_2_input_and_gate_0' of module 'Digital_Clock_four_2_input_and_gate_0_0' requires 12 connections, but only 10 given [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/hdl/Digital_Clock.v:112]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_seg7decimal_0_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_seg7decimal_0_0/synth/Digital_Clock_seg7decimal_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'seg7decimal' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/a7f128b3/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-226] default block is never used [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/a7f128b3/sources_1/new/seg7decimal.v:47]
+INFO: [Synth 8-226] default block is never used [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/a7f128b3/sources_1/new/seg7decimal.v:60]
+INFO: [Synth 8-256] done synthesizing module 'seg7decimal' (15#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/seg7decimal_v1_0/a7f128b3/sources_1/new/seg7decimal.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_seg7decimal_0_0' (16#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_seg7decimal_0_0/synth/Digital_Clock_seg7decimal_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Digital_Clock_xlconcat_0_0' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_xlconcat_0_0/synth/Digital_Clock_xlconcat_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (17#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/ipshared/xilinx.com/xlconcat_v2_1/21a398c4/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_xlconcat_0_0' (18#1) [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_xlconcat_0_0/synth/Digital_Clock_xlconcat_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock' (19#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/hdl/Digital_Clock.v:12]
+INFO: [Synth 8-256] done synthesizing module 'Digital_Clock_wrapper' (20#1) [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/imports/hdl/Digital_Clock_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 276.973 ; gain = 117.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 276.973 ; gain = 117.449
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0_board.xdc] for cell 'Digital_Clock_i/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0_board.xdc] for cell 'Digital_Clock_i/clk_wiz_0/inst'
+Parsing XDC File [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.xdc] for cell 'Digital_Clock_i/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.xdc] for cell 'Digital_Clock_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/sources_1/bd/Digital_Clock/ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Digital_Clock_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Digital_Clock_wrapper_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/constrs_1/imports/Constraint/Digital_Clock.xdc]
+Finished Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.srcs/constrs_1/imports/Constraint/Digital_Clock.xdc]
+Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Digital_Clock_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Digital_Clock_wrapper_propImpl.xdc] to anoth XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 560.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Digital_Clock_i. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 7).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/clk_div_1. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/clk_wiz_0. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 13).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/decimal_counter_0. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 16).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/decimal_counter_1. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 19).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/decimal_counter_2. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 22).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/decimal_counter_3. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 25).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/four_2_input_and_gate_0. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 28).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/seg7decimal_0. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 31).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/xlconcat_0. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 34).
+Applied set_property DONT_TOUCH = true for Digital_Clock_i/clk_wiz_0/inst. (constraint file  E:/Github/xupsh/Digital_Design_lab/Chapter_13/Digital_Clock/Digital_Clock_Design.runs/synth_1/dont_touch.xdc, line 37).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "count0" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Digital_Clock_wrapper 
+Detailed RTL Component Info : 
+Module clk_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Digital_Clock_clk_div_1_0 
+Detailed RTL Component Info : 
+Module Digital_Clock_clk_wiz_0_0_clk_wiz 
+Detailed RTL Component Info : 
+Module Digital_Clock_clk_wiz_0_0 
+Detailed RTL Component Info : 
+Module decimal_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 4     
+Module Digital_Clock_decimal_counter_0_0 
+Detailed RTL Component Info : 
+Module Digital_Clock_decimal_counter_1_0 
+Detailed RTL Component Info : 
+Module Digital_Clock_decimal_counter_2_0 
+Detailed RTL Component Info : 
+Module Digital_Clock_decimal_counter_3_0 
+Detailed RTL Component Info : 
+Module four_2_input_and_gate 
+Detailed RTL Component Info : 
+Module Digital_Clock_four_2_input_and_gate_0_0 
+Detailed RTL Component Info : 
+Module seg7decimal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Digital_Clock_seg7decimal_0_0 
+Detailed RTL Component Info : 
+Module xlconcat 
+Detailed RTL Component Info : 
+Module Digital_Clock_xlconcat_0_0 
+Detailed RTL Component Info : 
+Module Digital_Clock 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 560.855 ; gain = 401.332
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module Digital_Clock_decimal_counter_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module Digital_Clock_decimal_counter_0_0.
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module Digital_Clock_decimal_counter_1_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module Digital_Clock_decimal_counter_1_0.
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module Digital_Clock_decimal_counter_2_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module Digital_Clock_decimal_counter_2_0.
+INFO: [Synth 8-3332] Sequential element (\inst/a_reg ) is unused and will be removed from module Digital_Clock_decimal_counter_3_0.
+INFO: [Synth 8-3332] Sequential element (\inst/count_reg[2] ) is unused and will be removed from module Digital_Clock_decimal_counter_3_0.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 560.855 ; gain = 401.332
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |INV       |     8|
+|3     |LUT1      |     2|
+|4     |LUT2      |    12|
+|5     |LUT3      |    12|
+|6     |LUT4      |    28|
+|7     |LUT5      |    11|
+|8     |LUT6      |     9|
+|9     |MUXCY_L   |    50|
+|10    |PLLE2_ADV |     1|
+|11    |XORCY     |    52|
+|12    |FDCE      |    36|
+|13    |FDPE      |     8|
+|14    |FDRE      |    37|
+|15    |LDC       |     8|
+|16    |IBUF      |     3|
+|17    |OBUF      |    12|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------+----------------------------------------+------+
+|      |Instance                    |Module                                  |Cells |
++------+----------------------------+----------------------------------------+------+
+|1     |top                         |                                        |   292|
+|2     |  Digital_Clock_i           |Digital_Clock                           |   278|
+|3     |    clk_div_1               |Digital_Clock_clk_div_1_0               |   106|
+|4     |      inst                  |clk_div                                 |   106|
+|5     |    clk_wiz_0               |Digital_Clock_clk_wiz_0_0               |     5|
+|6     |      inst                  |Digital_Clock_clk_wiz_0_0_clk_wiz       |     5|
+|7     |    decimal_counter_0       |Digital_Clock_decimal_counter_0_0       |    21|
+|8     |      inst                  |decimal_counter_2                       |    21|
+|9     |    decimal_counter_1       |Digital_Clock_decimal_counter_1_0       |    21|
+|10    |      inst                  |decimal_counter_1                       |    21|
+|11    |    decimal_counter_2       |Digital_Clock_decimal_counter_2_0       |    21|
+|12    |      inst                  |decimal_counter_0                       |    21|
+|13    |    decimal_counter_3       |Digital_Clock_decimal_counter_3_0       |    21|
+|14    |      inst                  |decimal_counter                         |    21|
+|15    |    four_2_input_and_gate_0 |Digital_Clock_four_2_input_and_gate_0_0 |     4|
+|16    |    seg7decimal_0           |Digital_Clock_seg7decimal_0_0           |    79|
+|17    |      inst                  |seg7decimal                             |    79|
+|18    |    xlconcat_0              |Digital_Clock_xlconcat_0_0              |     0|
++------+----------------------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 560.855 ; gain = 401.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 560.855 ; gain = 85.223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 560.855 ; gain = 401.332
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 24 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 13 instances
+  LDC => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 560.855 ; gain = 369.105
+# write_checkpoint -noxdef Digital_Clock_wrapper.dcp
+# catch { report_utilization -file Digital_Clock_wrapper_utilization_synth.rpt -pb Digital_Clock_wrapper_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 560.855 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 29 13:29:40 2017...

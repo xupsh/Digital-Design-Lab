@@ -23,19 +23,19 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_clk_div_1_0/Digital_Clock_clk_div_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_xlconcat_0_0/Digital_Clock_xlconcat_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_seg7decimal_0_0/Digital_Clock_seg7decimal_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_four_2_input_and_gate_0_0/Digital_Clock_four_2_input_and_gate_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_decimal_counter_3_0/Digital_Clock_decimal_counter_3_0.xci"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_decimal_counter_2_0/Digital_Clock_decimal_counter_2_0.xci"/>
-        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_decimal_counter_1_0/Digital_Clock_decimal_counter_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_decimal_counter_0_0/Digital_Clock_decimal_counter_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_clk_wiz_0_0/Digital_Clock_clk_wiz_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_xlconcat_0_0/Digital_Clock_xlconcat_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_seg7decimal_0_0/Digital_Clock_seg7decimal_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="hw_handoff/Digital_Clock_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_clk_div_1_0/Digital_Clock_clk_div_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="ip/Digital_Clock_decimal_counter_1_0/Digital_Clock_decimal_counter_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="hw_handoff/Digital_Clock.hwh"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="Digital_Clock_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="hdl/Digital_Clock.v"/>
+        <CompFileExtendedInfo CompFileName="Digital_Clock.bd" FileRelPathName="hw_handoff/Digital_Clock_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/Digital_Clock_wrapper.v">
         <FileInfo>
@@ -113,4 +113,5 @@
       </Strategy>
     </Run>
   </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
 </Project>
