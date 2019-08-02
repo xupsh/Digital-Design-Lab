@@ -34,16 +34,19 @@ module stop_watch
         begin
            if (clr==0)
            begin
-              ms_reg <=23'b0;
+            ms_reg <=23'b0;
             d2_reg <= 4'b0;
-	          d1_reg <= 4'b0;
+	        d1_reg <= 4'b0;
             d0_reg <= 4'b0;
+			d2_next <= 4'b0;
+			d1_next <= 4'b0;
+			d0_next <= 4'b0;
            end
            else if (go == 1)
                 begin 
                   d2_reg <= d2_next;
 	              d1_reg <= d1_next;
-d0_reg <= d0_next;
+                  d0_reg <= d0_next;
                   if (ms_reg < COUNT_VALUE) 
                      ms_reg <= ms_reg + 1;
                   else
